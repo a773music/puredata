@@ -1,0 +1,10 @@
+#N canvas 678 234 318 175 10;
+#X obj 60 102 gain~;
+#A saved 0.101266;
+#X obj 69 154 dac~;
+#X obj 60 41 osc~ 440;
+#X obj 60 62 gate~;
+#X connect 0 0 1 0;
+#X connect 0 1 1 1;
+#X connect 2 0 3 0;
+#X connect 3 0 0 0;

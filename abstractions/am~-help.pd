@@ -1,0 +1,25 @@
+#N canvas 452 29 394 454 10;
+#X obj 43 33 loadbang;
+#X obj 43 55 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1 1
+;
+#X obj 43 75 metro 500;
+#X obj 43 252 gate~;
+#X obj 43 364 dac~;
+#X floatatom 186 102 5 0 0 0 - - -, f 5;
+#X floatatom 186 122 5 0 0 0 - - -, f 5;
+#X floatatom 186 142 5 0 0 0 - - -, f 5;
+#X text 231 100 <- mod freq;
+#X text 231 120 <- mod depth;
+#X text 231 140 <- ratio;
+#X obj 43 170 am~ 385 0.5 15;
+#X obj 43 97 rand 30 80;
+#X connect 0 0 1 0;
+#X connect 1 0 2 0;
+#X connect 2 0 12 0;
+#X connect 3 0 4 0;
+#X connect 3 0 4 1;
+#X connect 5 0 11 1;
+#X connect 6 0 11 2;
+#X connect 7 0 11 3;
+#X connect 11 0 3 0;
+#X connect 12 0 11 0;

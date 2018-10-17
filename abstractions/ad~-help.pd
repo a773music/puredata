@@ -1,0 +1,29 @@
+#N canvas 884 273 608 499 10;
+#X obj 121 25 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 100 198 dac~;
+#X floatatom 240 30 5 0 0 1 attack - -, f 5;
+#X floatatom 240 50 5 0 0 1 decay - -, f 5;
+#X obj 55 104 osc~ 400;
+#X text 25 25 bang to run ->;
+#X obj 107 166 *~;
+#X obj 229 236 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X obj 226 143 loadbang;
+#X obj 266 174 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X obj 226 184 metro 10;
+#X obj 226 210 snapshot~;
+#X obj 121 130 ad~ 4 40;
+#X connect 0 0 12 0;
+#X connect 2 0 12 1;
+#X connect 3 0 12 2;
+#X connect 4 0 6 0;
+#X connect 6 0 1 0;
+#X connect 6 0 1 1;
+#X connect 8 0 9 0;
+#X connect 9 0 10 0;
+#X connect 10 0 11 0;
+#X connect 11 0 7 0;
+#X connect 12 0 6 1;
+#X connect 12 0 11 0;

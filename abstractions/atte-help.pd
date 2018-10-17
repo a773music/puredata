@@ -1,0 +1,17 @@
+#N canvas 654 62 818 569 10;
+#X obj 89 63 ticker;
+#X obj 92 92 bpm2ms;
+#X obj 88 306 quantize;
+#X obj 88 335 quantize_gui;
+#X obj 88 117 beat;
+#X text 251 18 -- abstractions by atte --;
+#X obj 422 144 hh;
+#X obj 680 70 rand;
+#X obj 662 113 randf;
+#X obj 427 176 bd01;
+#A saved 0 0 0 0;
+#X obj 429 246 bd02;
+#A saved 0 0 0 0;
+#X obj 428 384 sd01;
+#A saved 0 0 0;
+#X obj 472 457 clocked_delay~;

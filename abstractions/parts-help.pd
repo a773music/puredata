@@ -1,0 +1,17 @@
+#N canvas 600 121 608 630 10;
+#X obj 180 76 ticker;
+#A saved 120 1;
+#X obj 18 132 r part;
+#X obj 18 153 print part;
+#X obj 180 132 beat;
+#A saved 0 1;
+#X obj 180 207 print quarter;
+#X obj 180 187 spigot;
+#X obj 213 167 tgl 15 1 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 18 36 parts 5 5;
+#A saved 0 0;
+#X connect 1 0 2 0;
+#X connect 3 0 5 0;
+#X connect 5 0 4 0;
+#X connect 6 0 5 1;

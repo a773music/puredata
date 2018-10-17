@@ -1,0 +1,34 @@
+#N canvas 597 231 607 368 10;
+#X obj 122 89 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X floatatom 68 90 5 0 0 0 - - -, f 5;
+#X floatatom 122 186 5 0 0 0 - - -, f 5;
+#X obj 122 42 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X obj 122 17 loadbang;
+#X obj 122 65 metro 1000;
+#X floatatom 196 119 5 0 0 0 - - -, f 5;
+#X obj 168 89 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X msg 186 88 reset;
+#X msg 221 46 step -1;
+#X msg 221 25 step 1.5;
+#X obj 122 152 counter;
+#X floatatom 282 186 5 0 0 0 - - -, f 5;
+#X floatatom 342 122 5 0 0 0 - - -, f 5;
+#X obj 282 152 counter 4;
+#X text 345 103 mod output;
+#X connect 0 0 11 0;
+#X connect 0 0 14 0;
+#X connect 1 0 11 0;
+#X connect 3 0 5 0;
+#X connect 4 0 3 0;
+#X connect 5 0 0 0;
+#X connect 6 0 11 1;
+#X connect 7 0 11 1;
+#X connect 8 0 11 1;
+#X connect 9 0 11 1;
+#X connect 10 0 11 1;
+#X connect 11 0 2 0;
+#X connect 13 0 14 2;
+#X connect 14 0 12 0;

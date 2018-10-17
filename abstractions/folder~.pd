@@ -1,0 +1,24 @@
+#N canvas 711 228 573 367 10;
+#X obj 51 41 inlet~;
+#X obj 41 302 outlet~;
+#X obj 118 41 inlet~;
+#X text 121 19 nb folds;
+#X obj 187 41 inlet~;
+#X text 191 19 offset;
+#X obj 51 175 +~;
+#X obj 51 197 *~;
+#X obj 118 163 expr~ 1 + ($v1*4);
+#X obj 118 135 expr~ ($v1+1)/2;
+#X obj 52 220 expr~ 2 * asin( sin( $v1 *(3.1415926535897932384626433832795028841971693993751058209749445923078164062/2)))/3.1415926535897932384626433832795028841971693993751058209749445923078164062
+;
+#X text 45 20 audio in;
+#X obj 119 90 expr~ $v1 / 2.94118 - 1.5;
+#X connect 0 0 6 0;
+#X connect 2 0 12 0;
+#X connect 4 0 6 1;
+#X connect 6 0 7 0;
+#X connect 7 0 10 0;
+#X connect 8 0 7 1;
+#X connect 9 0 8 0;
+#X connect 10 0 1 0;
+#X connect 12 0 9 0;

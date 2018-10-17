@@ -1,0 +1,17 @@
+#N canvas 294 291 364 195 10;
+#X obj 31 29 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 31 91 print;
+#X obj 131 29 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 131 91 print;
+#X floatatom 184 29 5 0 0 0 - - -, f 5;
+#X obj 31 61 count2;
+#X obj 131 61 count2 2;
+#X text 29 112 by default count to 0 \, so without;
+#X text 29 123 creation arguments \, nothing happens;
+#X connect 0 0 5 0;
+#X connect 2 0 6 0;
+#X connect 4 0 6 1;
+#X connect 5 0 1 0;
+#X connect 6 0 3 0;

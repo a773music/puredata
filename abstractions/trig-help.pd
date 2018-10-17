@@ -1,0 +1,17 @@
+#N canvas 766 350 376 258 10;
+#X obj 118 116 bng 15 50 10 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X floatatom 157 113 5 0 0 0 - - -;
+#X obj 138 23 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X obj 138 43 metro 250;
+#X msg 204 112 -1;
+#X msg 236 113 -2;
+#X obj 157 161 trig;
+#A saved 16 0;
+#X connect 0 0 6 0;
+#X connect 1 0 6 0;
+#X connect 2 0 3 0;
+#X connect 3 0 0 0;
+#X connect 4 0 6 0;
+#X connect 5 0 6 0;

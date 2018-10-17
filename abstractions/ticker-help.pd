@@ -1,0 +1,61 @@
+#N canvas 631 59 787 568 10;
+#X obj 94 40 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1 1
+;
+#X obj 12 202 bng 15 50 10 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 146 201 bng 15 50 10 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 33 201 print delay=0;
+#X obj 322 88 bng 15 50 10 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 323 169 bng 15 50 10 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X floatatom 348 88 5 0 0 0 - - -;
+#X floatatom 349 169 5 0 0 0 - - -;
+#X obj 322 46 beat 0.5;
+#A saved 0 0;
+#X obj 166 200 print delay=-1;
+#X obj 323 126 beat 3;
+#A saved 0 0;
+#X obj 466 125 beat 8;
+#A saved 0 0;
+#X obj 464 161 bng 15 50 10 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 564 125 beat 8;
+#A saved 0 0;
+#X obj 564 161 bng 15 50 10 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X msg 524 74 3;
+#X msg 564 74 5;
+#X msg 604 74 8;
+#X floatatom 564 95 5 0 0 0 - - -;
+#X text 522 36 dynamic division;
+#X obj 12 160 beat 2;
+#A saved 0 0;
+#X obj 146 160 beat 2 -1;
+#A saved 0 0;
+#X obj 94 59 ticker;
+#A saved 120 0;
+#X text 135 215 netative delay = early;
+#X msg 494 74 1;
+#X obj 108 304 beat;
+#A saved 0.5 0;
+#X obj 108 339 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X connect 0 0 22 0;
+#X connect 8 0 4 0;
+#X connect 8 0 6 0;
+#X connect 10 0 5 0;
+#X connect 10 0 7 0;
+#X connect 11 0 12 0;
+#X connect 13 0 14 0;
+#X connect 15 0 18 0;
+#X connect 16 0 18 0;
+#X connect 17 0 18 0;
+#X connect 18 0 13 0;
+#X connect 20 0 1 0;
+#X connect 20 0 3 0;
+#X connect 21 0 2 0;
+#X connect 21 0 9 0;
+#X connect 24 0 18 0;
+#X connect 25 0 26 0;

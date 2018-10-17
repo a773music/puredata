@@ -1,0 +1,11 @@
+#N canvas 670 118 803 601 10;
+#X obj 114 168 seq_trigger;
+#A saved 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1 1 8 0 0 0.5 2 0 0 0 3
+;
+#X obj 37 65 ticker;
+#A saved 120 1;
+#X obj 114 355 bng 15 50 10 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 382 83 parts 4 4;
+#A saved 0 0;
+#X connect 0 0 2 0;

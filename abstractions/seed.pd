@@ -1,0 +1,15 @@
+#N canvas 1230 30 450 300 10;
+#X obj 16 103 pack s f;
+#X msg 16 78 seed;
+#X obj 16 128 list trim;
+#X obj 16 153 outlet;
+#X obj 16 26 r seed;
+#X obj 16 52 t b f;
+#X text 82 21 to receive seed on startup (linux):;
+#X text 84 40 pd -send "seed `date +%N | cut -c -3`" "$@";
+#X connect 0 0 2 0;
+#X connect 1 0 0 0;
+#X connect 2 0 3 0;
+#X connect 4 0 5 0;
+#X connect 5 0 1 0;
+#X connect 5 1 0 1;

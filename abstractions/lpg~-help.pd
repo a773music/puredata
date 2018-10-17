@@ -1,0 +1,24 @@
+#N canvas 791 147 328 356 10;
+#X obj 46 28 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1 1
+;
+#X obj 46 48 metro 500;
+#X floatatom 46 90 5 0 0 0 - - -, f 5;
+#X obj 46 110 mtof;
+#X obj 46 131 tri~;
+#X obj 36 258 dac~;
+#X obj 46 69 rand 40 60;
+#X floatatom 105 158 5 0 0 1 decay - -, f 5;
+#X obj 46 210 lpg~;
+#X floatatom 105 178 5 0.1 10 1 response - -, f 5;
+#X connect 0 0 1 0;
+#X connect 1 0 6 0;
+#X connect 2 0 3 0;
+#X connect 3 0 4 0;
+#X connect 3 0 8 1;
+#X connect 4 0 8 0;
+#X connect 6 0 2 0;
+#X connect 7 0 8 2;
+#X connect 8 0 5 0;
+#X connect 8 0 5 1;
+#X connect 9 0 8 3;
+#X coords 0 3560 0.5 3550 0 0 0;

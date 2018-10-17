@@ -1,0 +1,19 @@
+#N canvas 690 45 614 281 10;
+#X obj 92 38 bng 15 250 50 0 empty empty play 17 7 0 10 -262144 -1
+-1;
+#X obj 140 215 dac~;
+#X obj 92 139 sample_player;
+#A saved 1 /mnt/data/atte/medium/music/pd/samples/breezing.wav;
+#X floatatom 214 93 5 0 0 1 playback_rate - -;
+#X msg 215 12 load ../samples/soul_clap_sd.wav;
+#X msg 214 32 load ../samples/ride3.wav;
+#X msg 214 52 load ../samples/breezing.wav;
+#X msg 56 38 stop;
+#X connect 0 0 2 0;
+#X connect 2 0 1 0;
+#X connect 2 1 1 1;
+#X connect 3 0 2 1;
+#X connect 4 0 2 0;
+#X connect 5 0 2 0;
+#X connect 6 0 2 0;
+#X connect 7 0 2 0;

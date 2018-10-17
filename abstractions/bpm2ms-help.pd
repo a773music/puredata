@@ -1,0 +1,13 @@
+#N canvas 783 112 310 239 10;
+#X obj 17 34 nbx 5 14 -1e+37 1e+37 0 1 bpm empty bpm 0 -8 0 10 -262144
+-1 -1 60 256;
+#X obj 17 177 print ms1;
+#X msg 97 109 1;
+#X msg 133 109 4;
+#X obj 97 177 print ms2;
+#X obj 97 147 bpm2ms 2;
+#X obj 17 147 bpm2ms;
+#X connect 2 0 5 0;
+#X connect 3 0 5 0;
+#X connect 5 0 4 0;
+#X connect 6 0 1 0;

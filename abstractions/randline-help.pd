@@ -1,0 +1,39 @@
+#N canvas 588 81 614 323 10;
+#X msg 45 63 1;
+#X msg 45 43 0.1;
+#X msg 45 83 8;
+#X obj 114 213 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 7038 1;
+#X obj 203 124 bng 15 250 50 0 empty empty start_new_line 20 7 0 10
+-262144 -1 -1;
+#X obj 111 26 tgl 15 0 empty empty randomize_scale_on/off 17 7 0 10
+-262144 -1 -1 0 1;
+#X obj 111 46 metro 5000;
+#X obj 111 67 randf 5 0.01;
+#X obj 111 88 pow 2;
+#X floatatom 111 109 5 0 0 1 time_scale - -;
+#X obj 111 152 randline;
+#A saved 1 0;
+#X obj 351 85 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 6371 1;
+#X obj 351 155 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 3130 1;
+#X obj 221 193 bng 15 50 10 0 empty empty bangs_when_starting_new_line
+20 7 0 10 -262144 -1 -1;
+#X obj 348 114 randline;
+#A saved 8 0;
+#X obj 348 44 randline;
+#A saved 0.1 0;
+#X connect 0 0 9 0;
+#X connect 1 0 9 0;
+#X connect 2 0 9 0;
+#X connect 4 0 10 1;
+#X connect 5 0 6 0;
+#X connect 6 0 7 0;
+#X connect 7 0 8 0;
+#X connect 8 0 9 0;
+#X connect 9 0 10 0;
+#X connect 10 0 3 0;
+#X connect 10 1 13 0;
+#X connect 14 0 12 0;
+#X connect 15 0 11 0;

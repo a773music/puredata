@@ -1,0 +1,50 @@
+#N canvas 260 163 855 741 10;
+#X obj 82 38 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0 1
+;
+#X obj 82 78 bng 15 50 10 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X floatatom 48 529 5 0 0 0 - - -;
+#X msg 318 28 0 1 \, 1 2 \, 2 3 \, 3 4 \, 4 5 \, 5 6 \, 6 7 \, 7 8
+\, 8 9 \, 9 10 \, 10 11 \, 11 12 \, 12 13 \, 13 14 \, 14 15 \, 15 16
+\, first 0 \, last 6;
+#X msg 317 82 0 12 \, 1 12 \, 2 24 \, 3 -1 \, 4 -1 \, 5 0 \, 6 12 \,
+7 -1 \, 8 0 \, 9 12 \, 10 20 \, 11 3 \, 12 -1 \, 13 -1 \, 14 0 \, 15
+0 \, first 4 \, last 1;
+#X obj 89 528 bng 15 50 10 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 82 57 metro 1000;
+#X floatatom 156 528 5 0 0 0 - - -;
+#X obj 197 528 bng 15 50 10 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X text 44 512 all steps;
+#X text 147 512 non-negative;
+#X text 43 545 value;
+#X text 86 545 value;
+#X text 85 556 changed;
+#X text 153 545 value;
+#X text 196 545 value;
+#X text 195 556 changed;
+#X obj 82 131 seq;
+#A saved 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 1 0 0 0 0 0 0 0 0 15
+0 0 0 0 5 3 1 1;
+#X obj 618 311 ticker;
+#A saved 120 1;
+#X floatatom 635 118 5 0 0 0 - - -;
+#X msg 189 32 0;
+#X msg 189 52 1;
+#X msg 189 72 2;
+#X obj 635 142 parts 4 4 4 4;
+#A saved 0 0;
+#X connect 0 0 6 0;
+#X connect 1 0 17 0;
+#X connect 3 0 17 0;
+#X connect 4 0 17 0;
+#X connect 6 0 1 0;
+#X connect 17 0 2 0;
+#X connect 17 1 5 0;
+#X connect 17 2 7 0;
+#X connect 17 3 8 0;
+#X connect 19 0 23 0;
+#X connect 20 0 17 1;
+#X connect 21 0 17 1;
+#X connect 22 0 17 1;

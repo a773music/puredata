@@ -1,0 +1,16 @@
+#N canvas 907 151 624 366 10;
+#X obj 33 62 inlet~;
+#X text 26 26 sends audio and pan info to mixer;
+#X text 26 11 channel strip input stage;
+#X text 190 73 creation arguments;
+#X text 200 89 1: channel number;
+#X obj 32 93 throw~ ch\$1-audio;
+#X obj 418 53 loadbang;
+#X obj 418 124 s ch\$1-pan;
+#X obj 418 75 list \$2;
+#X obj 418 96 select 0;
+#X text 200 100 2: pan;
+#X connect 0 0 5 0;
+#X connect 6 0 8 0;
+#X connect 8 0 9 0;
+#X connect 9 1 7 0;

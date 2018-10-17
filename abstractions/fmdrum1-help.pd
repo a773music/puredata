@@ -1,0 +1,14 @@
+#N canvas 591 88 972 737 10;
+#X obj 369 351 fmdrum1;
+#X floatatom 290 232 5 0 0 0 - - -;
+#X floatatom 428 230 5 0 0 0 - - -;
+#X floatatom 349 242 5 0 0 0 - - -;
+#X obj 272 453 *~;
+#X obj 392 451 *~;
+#X obj 442 451 *~;
+#X connect 0 0 4 0;
+#X connect 0 1 5 0;
+#X connect 0 2 6 0;
+#X connect 1 0 0 0;
+#X connect 2 0 0 2;
+#X connect 3 0 0 1;

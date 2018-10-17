@@ -1,0 +1,13 @@
+#N canvas 621 77 316 275 10;
+#X obj 34 207 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X obj 31 38 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X floatatom 132 76 5 0 0 1 attack - -, f 5;
+#X floatatom 132 96 5 0 0 1 decay - -, f 5;
+#X text 55 36 <- bang to run;
+#X obj 31 146 ad 2 1000;
+#X connect 1 0 5 0;
+#X connect 2 0 5 1;
+#X connect 3 0 5 2;
+#X connect 5 0 0 0;

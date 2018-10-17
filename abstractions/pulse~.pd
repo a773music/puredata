@@ -1,0 +1,16 @@
+#N canvas 999 151 681 618 12;
+#X floatatom 95 84 5 0 0 0 - - -, f 5;
+#X obj 95 108 phasor~;
+#X obj 94 139 -~ 0.99;
+#X obj 95 168 clip~ 0 1;
+#X obj 95 202 *~ 100;
+#X text 326 51 www.pd-tutorial.com;
+#X text 329 26 Johannes Kreidler;
+#X obj 95 226 outlet~;
+#X obj 95 50 inlet;
+#X connect 0 0 1 0;
+#X connect 1 0 2 0;
+#X connect 2 0 3 0;
+#X connect 3 0 4 0;
+#X connect 4 0 7 0;
+#X connect 8 0 0 0;

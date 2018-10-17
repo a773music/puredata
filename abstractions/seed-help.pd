@@ -1,0 +1,12 @@
+#N canvas 693 69 450 327 10;
+#X obj 90 73 seed;
+#X obj 65 48 delay 1;
+#X obj 65 24 loadbang 1;
+#X obj 65 113 random 100;
+#X obj 65 136 print random;
+#X obj 192 119 print seed;
+#X connect 0 0 3 0;
+#X connect 0 0 5 0;
+#X connect 1 0 3 0;
+#X connect 2 0 1 0;
+#X connect 3 0 4 0;
