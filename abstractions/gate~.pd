@@ -1,7 +1,7 @@
 #N canvas 867 222 587 315 10;
 #X obj 292 49 inlet;
-#X obj 105 117 tgl 15 0 \$0-on \$0-on empty 17 7 0 10 -262144 -1 -1
-1 1;
+#X obj 133 101 tgl 14 0 \$0-on \$0-on empty 17 7 0 10 -262144 -1 -1
+0 1;
 #X obj 53 55 inlet~;
 #X obj 53 249 outlet~;
 #X obj 54 201 *~;
@@ -33,4 +33,4 @@
 #X connect 14 0 6 0;
 #X connect 15 0 14 0;
 #X connect 16 0 17 0;
-#X coords 0 -1 1 1 40 35 1 100 100;
+#X coords 0 -1 1 1 47 16 1 100 100;

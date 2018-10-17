@@ -1,7 +1,7 @@
-#N canvas 797 74 416 304 10;
+#N canvas 194 119 416 304 10;
 #X obj 99 20 inlet;
-#X obj 105 137 tgl 15 0 \$0-on \$0-on empty 17 7 0 10 -262144 -1 -1
-1 1;
+#X obj 128 121 tgl 14 0 \$0-on \$0-on empty 17 7 0 10 -262144 -1 -1
+0 1;
 #X obj 46 20 inlet;
 #X obj 46 228 outlet;
 #X obj 46 183 spigot;
@@ -27,4 +27,4 @@
 #X connect 11 1 9 0;
 #X connect 12 0 14 0;
 #X connect 13 0 9 1;
-#X coords 0 -1 1 1 40 35 1 100 120;
+#X coords 0 -1 1 1 42 14 1 100 120;
