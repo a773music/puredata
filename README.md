@@ -1,8 +1,8 @@
 # Pure Data Abstractions
 
 ## Mixing
-ch_bridge.pd
-ch_fader.pd
+ch_bridge.pd 
+ch_fader.pd 
 ch~.pd
 ch_strip.pd
 boostlo~.pd
