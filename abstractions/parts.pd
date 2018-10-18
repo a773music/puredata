@@ -1,4 +1,4 @@
-#N canvas 387 218 1085 658 10;
+#N canvas 129 91 1085 658 10;
 #X obj 1 16 nbx 2 14 -1 7 0 0 \$0-first_part \$0-first_part empty 0
 -8 0 10 -262144 -1 -1 0 256;
 #X obj 147 15 inlet;
@@ -72,12 +72,12 @@
 #X connect 15 0 16 0;
 #X restore 22 117 pd handle_butttons;
 #X obj 147 56 + 1;
-#X obj 590 56 f;
-#X obj 590 77 pack;
-#X obj 539 36 savestate;
-#X obj 539 77 unpack;
-#X obj 539 97 s \$0-first_part;
-#X obj 605 36 r \$0-first_part;
+#X obj 694 63 f;
+#X obj 694 84 pack;
+#X obj 643 43 savestate;
+#X obj 643 84 unpack;
+#X obj 643 104 s \$0-first_part;
+#X obj 709 43 r \$0-first_part;
 #X obj 286 35 r \$0-first_part;
 #X obj 286 76 + 1;
 #X obj 286 97 s \$0-first;
@@ -449,10 +449,13 @@
 #X connect 9 0 8 0;
 #X restore 22 216 pd handle_progress_bar;
 #X obj 3 61 hsl 116 10 0 1 0 0 \$0-junk \$0-progress empty -2 -8 0
-10 -262144 -1 -1 6828 1;
+10 -262144 -1 -1 0 1;
 #X obj 231 165 outlet;
 #X obj 231 145 r \$0-progress;
 #X obj 211 185 s part_progress;
+#X obj 531 171 spigot 1;
+#X msg 598 115 0;
+#X obj 531 150 ii 0;
 #X connect 1 0 2 0;
 #X connect 2 0 21 0;
 #X connect 21 0 11 0;
@@ -461,6 +464,7 @@
 #X connect 24 0 25 0;
 #X connect 24 1 22 0;
 #X connect 25 0 26 0;
+#X connect 25 0 48 0;
 #X connect 27 0 22 1;
 #X connect 28 0 31 0;
 #X connect 29 0 30 0;
@@ -472,4 +476,7 @@
 #X connect 39 0 40 0;
 #X connect 45 0 44 0;
 #X connect 45 0 46 0;
+#X connect 47 0 26 0;
+#X connect 48 0 47 1;
+#X connect 49 0 47 0;
 #X coords 0 -1 1 1 121 71 1 0 0;
