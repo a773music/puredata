@@ -87,7 +87,7 @@ router8out~.pd
 router8out.pd  
 seq_array.pd  
 seq.pd  
-seq_phrase.pd
+seq_phrase.pd  
 seq_trigger.pd  
 ticker.pd  
 trig.pd  
