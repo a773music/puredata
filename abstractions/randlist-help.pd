@@ -1,0 +1,11 @@
+#N canvas 648 139 434 227 10;
+#X obj 36 133 randlist;
+#X msg 36 31 0 1 2 3 4 5 6 7;
+#X msg 46 51 10 20 30;
+#X msg 56 71 green energy;
+#X obj 36 154 print;
+#X text 141 72 fixme: doesn't work with symbols;
+#X connect 0 0 4 0;
+#X connect 1 0 0 0;
+#X connect 2 0 0 0;
+#X connect 3 0 0 0;
