@@ -1,8 +1,8 @@
-#N canvas 443 156 802 430 10;
+#N canvas 443 156 1002 563 10;
 #X obj 343 308 noteout;
 #X obj 147 26 inlet;
 #X obj 28 14 nbx 2 14 1 8 0 0 \$0-midi_channel \$0-midi_channel chan
--26 7 0 10 -262144 -1 -1 8 256;
+-26 7 0 10 -262144 -1 -1 1 256;
 #X obj 612 82 f;
 #X obj 612 111 pack;
 #X obj 561 53 savestate;
@@ -61,4 +61,4 @@
 #X connect 27 0 25 0;
 #X connect 28 0 0 2;
 #X connect 28 0 11 2;
-#X coords 0 -1 1 1 58 30 1 0 0;
+#X coords 0 -1 1 1 56 28 1 0 0;
