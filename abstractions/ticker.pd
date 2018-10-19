@@ -1,4 +1,4 @@
-#N canvas 841 119 921 771 10;
+#N canvas 759 119 921 771 10;
 #X obj 114 36 loadbang;
 #X obj 93 322 metro;
 #X obj 55 46 inlet;
@@ -8,11 +8,11 @@
 #X obj 129 404 + 1;
 #X obj 93 438 s tick;
 #X text 149 241 <- tick resolution;
-#X obj 284 46 inlet;
+#X obj 385 38 inlet;
 #X msg 774 164 60;
 #X text 217 361 <- reset;
 #X text 41 27 metro ctrl;
-#X text 283 26 tempo;
+#X text 384 18 tempo;
 #X obj 114 242 / 24;
 #X obj 429 135 select 250 252 248;
 #X obj 393 284 t b b;
@@ -38,7 +38,7 @@
 #X msg 172 332 0;
 #X msg 185 362 0;
 #X obj 328 100 nbx 3 14 1 999 0 0 bpm bpm empty 0 -8 0 10 -262144 -1
--1 160 256;
+-1 150 256;
 #N canvas 0 29 450 300 keep_sending_bpm 0;
 #X obj 195 105 r bpm;
 #X obj 177 135 f;
@@ -69,7 +69,7 @@
 #X obj 170 458 mod 24;
 #X obj 170 479 sel 0;
 #X obj 300 100 tgl 14 0 \$0-run \$0-run empty 17 7 0 10 -262144 -1
--1 1 1;
+-1 0 1;
 #X obj 44 150 s \$0-run;
 #X obj 56 292 r \$0-run;
 #X obj 814 418 r \$0-run;
@@ -79,6 +79,34 @@
 #X msg 636 534 0;
 #X obj 591 534 ii 120;
 #X obj 591 583 s bpm;
+#N canvas 302 133 833 560 handle_spacebar 0;
+#X obj 101 30 key;
+#X obj 101 70 sel 32;
+#X obj 144 227 s reset;
+#X obj 1 16 tgl 15 0 space_start_stop space_start_stop empty 17 7 0
+10 -262144 -1 -1 1 1;
+#X obj 101 50 spigot;
+#X obj 134 30 r space_start_stop;
+#X obj 144 128 f;
+#X obj 202 206 expr 1-$f1;
+#X obj 202 227 s \$0-run;
+#X obj 159 101 r \$0-run;
+#X obj 144 187 sel 1;
+#X obj 144 149 t f f;
+#X msg 144 207 0;
+#X connect 0 0 4 0;
+#X connect 1 0 6 0;
+#X connect 4 0 1 0;
+#X connect 5 0 4 1;
+#X connect 6 0 11 0;
+#X connect 7 0 8 0;
+#X connect 9 0 6 1;
+#X connect 10 0 12 0;
+#X connect 11 0 10 0;
+#X connect 11 1 7 0;
+#X connect 12 0 2 0;
+#X coords 0 -1 1 1 15 30 1 1 1;
+#X restore 216 22 pd handle_spacebar;
 #X connect 0 0 34 0;
 #X connect 1 0 17 0;
 #X connect 2 0 50 0;
