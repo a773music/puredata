@@ -1,6 +1,6 @@
 #N canvas 521 58 997 713 10;
 #X obj 17 16 nbx 2 14 1 16 0 0 \$0-trig_nb \$0-trig_nb nb -14 7 0 10
--262144 -1 -1 1 256;
+-262144 -1 -1 10 256;
 #X obj 138 55 inlet;
 #X obj 138 124 route bang;
 #X obj 477 52 r \$0-trig_nb;
@@ -90,4 +90,4 @@
 #X connect 40 0 13 2;
 #X connect 40 0 15 2;
 #X connect 41 0 40 0;
-#X coords 0 -1 1 1 77 32 1 0 0;
+#X coords 0 -1 1 1 75 30 1 0 0;
