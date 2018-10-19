@@ -2,7 +2,7 @@
 #X obj 243 82 bng 15 50 10 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
 #X obj 102 289 nbx 2 14 -1e+37 1e+37 0 0 \$0-length \$0-length len
-0 -8 0 10 -262144 -1 -1 3 256;
+0 -8 0 10 -262144 -1 -1 1 256;
 #X obj 41 806 outlet;
 #X obj 136 38 inlet;
 #X obj 230 806 outlet;
@@ -202,11 +202,11 @@
 #X obj 1396 134 s \$0-complex_div;
 #X text 118 19 bang to start;
 #X obj 40 309 nbx 3 15 -1 128 0 0 \$0-set_note \$0-disp_note n -8 7
-0 10 -262144 -1 -1 15 256;
+0 10 -262144 -1 -1 0 256;
 #X obj 88 309 nbx 2 15 1 99 0 0 \$0-set_len \$0-current_step_len l
 -8 7 0 10 -262144 -1 -1 1 256;
 #X obj 33 324 hsl 95 8 0 1 0 0 \$0-set_val \$0-disp_val empty -2 -8
-0 10 -262144 -1 -1 9100 1;
+0 10 -262144 -1 -1 0 1;
 #X msg 293 81 1;
 #X obj 243 106 s \$0-go;
 #X obj 293 106 s \$0-running;
@@ -471,7 +471,7 @@
 #X obj 759 321 r \$0-resync;
 #X obj 756 213 r \$0-length;
 #X obj 738 253 mod;
-#N canvas 770 468 679 425 handle_input 0;
+#N canvas 770 468 679 425 handle_input 1;
 #X obj 229 132 s \$0-reset;
 #X msg 229 112 0;
 #X obj 117 29 r \$0-in;
