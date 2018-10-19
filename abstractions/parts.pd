@@ -3,7 +3,7 @@
 -8 0 10 -262144 -1 -1 0 256;
 #X obj 147 15 inlet;
 #X obj 147 36 clip 0 7;
-#X obj 1 46 cnv 14 14 14 empty \$0-status0 empty 20 12 0 14 -33289
+#X obj 1 46 cnv 14 14 14 empty \$0-status0 empty 20 12 0 14 -262144
 -66577 0;
 #X obj 16 46 cnv 14 14 14 empty \$0-status1 empty 20 12 0 14 -262144
 -66577 0;
@@ -424,7 +424,7 @@
 #X connect 32 0 30 1;
 #X connect 33 1 15 0;
 #X restore 22 196 pd handle_colors;
-#N canvas 657 480 529 397 handle_progress_bar 1;
+#N canvas 657 480 529 397 handle_progress_bar 0;
 #X obj 113 20 r \$0-div;
 #X obj 31 156 mod;
 #X obj 110 108 beat 0.125;
@@ -449,7 +449,7 @@
 #X connect 9 0 8 0;
 #X restore 22 216 pd handle_progress_bar;
 #X obj 3 61 hsl 116 10 0 1 0 0 \$0-junk \$0-progress empty -2 -8 0
-10 -262144 -1 -1 719 1;
+10 -262144 -1 -1 0 1;
 #X obj 231 165 outlet;
 #X obj 231 145 r \$0-progress;
 #X obj 211 185 s part_progress;
