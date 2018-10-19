@@ -25,10 +25,10 @@
 #X text 300 613 value;
 #X text 299 624 changed;
 #X obj 186 199 seq;
-#A saved 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 1 0 0 0 0 0 0 0 0 15
-0 0 0 0 5 3 1 1;
+#A saved 0 1 2 1 4 5 6 7 8 9 10 11 12 13 14 15 0 0 0 0 0 0 0 0 0 6
+0 0 0 0 1 4 1 0;
 #X obj 618 311 ticker;
-#A saved 120 0;
+#A saved 120 1;
 #X floatatom 635 118 5 0 0 0 - - -;
 #X obj 635 142 parts 4 4 4 4;
 #A saved 0 0;
