@@ -1,27 +1,34 @@
-#N canvas 618 76 553 517 10;
+#N canvas 618 76 779 628 10;
 #X obj 30 30 inlet;
 #X obj 32 470 outlet;
-#X obj 137 116 nbx 4 14 0 1e+37 0 0 \$0-div \$0-div div -21 7 0 10
--262144 -1 -1 0.5 256;
-#X obj 137 130 nbx 4 14 0.5 0.75 0 0 \$0-swing \$0-swing swing -33
-7 0 10 -262144 -1 -1 0.66 256;
-#N canvas 0 50 450 300 savestate 0;
-#X obj 135 148 f;
-#X obj 135 177 pack;
-#X obj 84 121 savestate;
-#X obj 84 222 unpack;
-#X obj 164 54 r \$0-div;
-#X obj 89 260 s \$0-div;
-#X obj 175 123 r \$0-swing;
-#X obj 165 263 s \$0-swing;
+#X obj 134 116 nbx 4 14 0 1e+37 0 0 \$0-div \$0-div div -21 7 0 10
+-262144 -1 -1 0 256;
+#X obj 134 130 nbx 4 14 0.5 0.75 0 0 \$0-swing \$0-swing swing -33
+7 0 10 -262144 -1 -1 0.5 256;
+#N canvas 732 127 567 521 savestate 0;
+#X obj 270 153 f;
+#X obj 270 175 pack;
+#X obj 219 132 savestate;
+#X obj 219 190 unpack;
+#X obj 285 132 r \$0-div;
+#X obj 219 228 s \$0-div;
+#X obj 349 133 r \$0-swing;
+#X obj 280 228 s \$0-swing;
+#X obj 138 274 spigot 1;
+#X msg 183 216 0;
+#X obj 138 253 1;
 #X connect 0 0 1 0;
 #X connect 1 0 2 0;
 #X connect 2 0 3 0;
 #X connect 2 1 0 0;
 #X connect 3 0 5 0;
+#X connect 3 0 9 0;
 #X connect 3 1 7 0;
 #X connect 4 0 0 1;
 #X connect 6 0 1 1;
+#X connect 8 0 5 0;
+#X connect 9 0 8 1;
+#X connect 10 0 8 0;
 #X restore 105 171 pd savestate;
 #X obj 30 51 s \$0-in;
 #X obj 32 450 r \$0-out;
@@ -32,8 +39,8 @@
 #A saved 0.66 0;
 #X obj 314 48 r \$0-div;
 #X obj 314 68 pipe 0.0001;
-#X obj 129 145 bng 15 50 10 0 empty \$0-q empty 17 7 0 10 -262144 -1
--1;
+#X obj 149 145 bng 15 150 10 0 empty \$0-q empty 17 7 0 10 -262144
+-1 -1;
 #X msg 235 211 0;
 #X obj 220 340 spigot;
 #X msg 317 211 1;
@@ -48,9 +55,9 @@
 #X obj 383 159 s \$0-q;
 #X msg 220 176 bang;
 #X obj 138 274 s \$0-bangin;
-#X obj 109 145 bng 15 50 10 0 empty \$0-bangin empty 17 7 0 10 -262144
+#X obj 134 145 bng 15 150 10 0 empty \$0-bangin empty 17 7 0 10 -262144
 -1 -1;
-#X obj 149 145 bng 15 50 10 0 empty \$0-out empty 17 7 0 10 -262144
+#X obj 164 145 bng 15 150 10 0 empty \$0-out empty 17 7 0 10 -262144
 -1 -1;
 #X connect 0 0 5 0;
 #X connect 6 0 1 0;
@@ -76,4 +83,4 @@
 #X connect 23 0 10 3;
 #X connect 25 0 8 0;
 #X connect 25 0 26 0;
-#X coords 0 -1 1 1 85 60 1 100 100;
+#X coords 0 -1 1 1 79 60 1 100 100;
