@@ -2,7 +2,7 @@
 #X obj 30 30 inlet;
 #X obj 32 470 outlet;
 #X obj 134 116 nbx 4 14 0 1e+37 0 0 \$0-div \$0-div div -21 7 0 10
--262144 -1 -1 0 256;
+-262144 -1 -1 1 256;
 #X obj 134 130 nbx 4 14 0.5 0.75 0 0 \$0-swing \$0-swing swing -33
 7 0 10 -262144 -1 -1 0.5 256;
 #N canvas 732 127 567 521 savestate 0;
@@ -16,7 +16,7 @@
 #X obj 280 228 s \$0-swing;
 #X obj 138 274 spigot 1;
 #X msg 183 216 0;
-#X obj 138 253 1;
+#X obj 138 253 ii 1;
 #X connect 0 0 1 0;
 #X connect 1 0 2 0;
 #X connect 2 0 3 0;
