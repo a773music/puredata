@@ -76,7 +76,7 @@
 #X obj 685 128 spigot;
 #X obj 685 149 s \$0-reset;
 #X obj 141 580 s \$0-bang;
-#X obj 286 116 bng 14 50 10 0 \$0-bang \$0-bang empty 17 7 0 10 -262144
+#X obj 286 116 bng 14 150 50 0 \$0-bang \$0-bang empty 17 7 0 10 -262144
 -1 -1;
 #X obj 1007 270 spigot 1;
 #X msg 1052 248 0;
