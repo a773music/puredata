@@ -1,6 +1,6 @@
-#N canvas 596 110 641 375 10;
+#N canvas 635 235 788 644 10;
 #X obj 102 93 seq_array;
-#A saved 0 0 0 0 0 0 0 0 0 97 0 0 0 0 1 3 0 0 values;
+#A saved 0 0 0 0 0 0 0 0 0 3 0 0 0 0 1 1 0 0 values;
 #N canvas 0 50 450 250 (subpatch) 0;
 #X array values 100 float 3;
 #A 0 0.342857 0.514286 2.91429 3.77143 4.62857 5.65714 6.51429 8.22857
@@ -16,9 +16,9 @@
 16.1143 15.0857 14.0571 12.3429 10.1143;
 #X coords 0 24 100 0 200 140 1 0 0;
 #X restore 416 66 graph;
-#X floatatom 195 55 5 0 0 2 step_in - -;
+#X floatatom 102 34 5 0 0 2 step_in - -;
 #X floatatom 102 298 6 0 0 3 value - -;
 #X obj 284 94 ticker;
 #A saved 120 1;
 #X connect 0 0 3 0;
-#X connect 2 0 0 1;
+#X connect 2 0 0 0;

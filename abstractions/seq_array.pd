@@ -1,8 +1,8 @@
-#N canvas 161 56 1323 877 10;
+#N canvas -47 112 1327 886 10;
 #X obj 30 303 nbx 2 14 0 1e+08 0 0 \$0-first \$0-first empty -35 7
 0 10 -262144 -1 -1 0 256;
 #X obj 76 303 nbx 2 14 0 1e+07 0 0 \$0-last \$0-last -> -15 7 0 10
--262144 -1 -1 9 256;
+-262144 -1 -1 3 256;
 #X obj 41 705 r \$0-stepValue;
 #X obj 41 746 outlet;
 #X obj 135 48 inlet;
@@ -233,7 +233,7 @@
 #X obj 80 363 nbx 4 14 0 10 0 0 \$0-oct_jitter \$0-oct_jitter o-jit
 0 -8 0 10 -262144 -1 -1 0 256;
 #X obj 30 289 nbx 3 14 0 100 0 0 \$0-div \$0-div div 0 -8 0 10 -262144
--1 -1 0 256;
+-1 -1 1 256;
 #X obj 136 102 s \$0-in_bang;
 #X obj 30 392 tgl 10 0 \$0-part0 \$0-part0 empty 17 7 0 10 -262144
 -1 -1 0 1;
@@ -251,8 +251,8 @@
 -1 -1 0 1;
 #X obj 100 392 tgl 10 0 \$0-part7 \$0-part7 empty 17 7 0 10 -262144
 -1 -1 0 1;
-#X obj 111 377 tgl 14 0 \$0-reset_on_part \$0-reset_on_part reset -32
-7 0 10 -262144 -1 -1 0 1;
+#X obj 30 378 tgl 14 0 \$0-reset_on_part \$0-reset_on_part rst 17 7
+0 10 -262144 -1 -1 0 1;
 #X obj 156 705 sel 1;
 #X obj 466 695 sel 1;
 #X obj 216 213 beat 1;
@@ -398,8 +398,8 @@
 #X obj 639 573 s \$0-array_size;
 #X obj 30 402 hradio 10 1 0 8 empty part empty 0 -8 0 10 -262144 -1
 -1 0;
-#X obj 68 289 nbx 3 14 0 100 0 0 \$0-mult \$0-mult mult 0 -8 0 10 -262144
--1 -1 1 256;
+#X obj 68 289 nbx 3 14 1 100 0 0 \$0-mult \$0-mult mult 0 -8 0 10 -262144
+-1 -1 2 256;
 #X obj 898 439 r \$0-div;
 #X obj 898 459 pipe 0.0001;
 #X obj 1006 457 pipe 0.0001;
@@ -407,7 +407,7 @@
 #X obj 1006 437 r \$0-mult;
 #X obj 904 535 expr if($f2 \, $f1 / $f2 \, $f1);
 #X obj 904 556 s \$0-complex_div;
-#X obj 295 187 r \$0-complex_div;
+#X obj 216 172 r \$0-complex_div;
 #X obj 749 552 array size;
 #X obj 761 494 t b s;
 #X symbolatom 761 435 10 0 0 0 - - -;
@@ -416,7 +416,6 @@
 #X obj 395 238 r \$0-in_bang;
 #X obj 408 313 spigot 1;
 #X msg 453 291 0;
-#X obj 395 259 t b b b f b;
 #X obj 766 578 - 1;
 #X obj 325 51 inlet;
 #X obj 135 76 route bang;
@@ -438,8 +437,20 @@
 #X obj 1000 58 inlet;
 #X obj 921 78 s \$0-octave;
 #X obj 1000 78 s \$0-oct_jitter;
+#X obj 111 377 bng 14 250 50 0 \$0-resync empty sync -27 7 0 10 -262144
+-1 -1;
+#X obj 1103 56 inlet;
+#X obj 1103 97 s \$0-resync;
+#X msg 1103 77 bang;
+#X obj 395 259 t b b b f b b f;
+#X obj 561 316 spigot 1;
+#X msg 606 294 0;
+#X msg 638 294 1;
+#X obj 638 272 r \$0-resync;
+#X obj 375 495 mod;
+#X obj 418 475 r \$0-mod;
 #X connect 2 0 74 0;
-#X connect 4 0 121 0;
+#X connect 4 0 120 0;
 #X connect 7 0 8 0;
 #X connect 8 0 12 1;
 #X connect 8 1 12 0;
@@ -463,7 +474,7 @@
 #X connect 54 0 59 0;
 #X connect 56 0 54 1;
 #X connect 57 0 58 1;
-#X connect 58 0 118 0;
+#X connect 58 0 143 0;
 #X connect 59 0 66 0;
 #X connect 60 0 52 1;
 #X connect 61 0 65 0;
@@ -472,7 +483,7 @@
 #X connect 63 1 67 1;
 #X connect 64 0 63 0;
 #X connect 65 0 63 1;
-#X connect 66 0 68 0;
+#X connect 66 0 148 0;
 #X connect 67 0 71 0;
 #X connect 67 1 70 0;
 #X connect 67 2 72 0;
@@ -490,7 +501,7 @@
 #X connect 85 0 86 0;
 #X connect 86 0 87 0;
 #X connect 87 0 88 0;
-#X connect 89 0 125 0;
+#X connect 89 0 124 0;
 #X connect 91 0 90 0;
 #X connect 91 1 80 0;
 #X connect 93 0 99 0;
@@ -511,28 +522,39 @@
 #X connect 107 0 108 0;
 #X connect 109 0 51 0;
 #X connect 109 0 57 0;
-#X connect 110 0 119 0;
+#X connect 110 0 118 0;
 #X connect 111 0 113 0;
 #X connect 111 1 110 1;
 #X connect 112 0 111 0;
 #X connect 113 0 110 0;
-#X connect 115 0 118 0;
+#X connect 115 0 143 0;
 #X connect 116 0 54 1;
 #X connect 117 0 116 1;
-#X connect 118 0 54 0;
-#X connect 118 1 80 0;
-#X connect 118 2 117 0;
-#X connect 118 3 116 0;
-#X connect 118 4 97 0;
-#X connect 119 0 114 0;
-#X connect 120 0 31 0;
-#X connect 121 0 39 0;
-#X connect 121 1 91 0;
-#X connect 126 0 127 0;
+#X connect 118 0 114 0;
+#X connect 119 0 31 0;
+#X connect 120 0 39 0;
+#X connect 120 1 91 0;
+#X connect 125 0 126 0;
+#X connect 127 0 129 0;
 #X connect 128 0 130 0;
-#X connect 129 0 131 0;
+#X connect 131 0 133 0;
 #X connect 132 0 134 0;
-#X connect 133 0 135 0;
+#X connect 135 0 137 0;
 #X connect 136 0 138 0;
-#X connect 137 0 139 0;
+#X connect 140 0 142 0;
+#X connect 142 0 141 0;
+#X connect 142 0 139 0;
+#X connect 143 0 54 0;
+#X connect 143 1 80 0;
+#X connect 143 2 117 0;
+#X connect 143 3 116 0;
+#X connect 143 4 97 0;
+#X connect 143 5 145 0;
+#X connect 143 6 144 0;
+#X connect 144 0 54 1;
+#X connect 145 0 144 1;
+#X connect 146 0 144 1;
+#X connect 147 0 146 0;
+#X connect 148 0 68 0;
+#X connect 149 0 148 1;
 #X coords 0 -1 1 1 95 174 1 30 240;
