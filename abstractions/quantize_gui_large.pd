@@ -1,4 +1,4 @@
-#N canvas 137 29 1108 752 10;
+#N canvas 137 29 1050 633 10;
 #X obj 52 46 inlet;
 #X text 53 26 note in;
 #X text 423 439 note out;
@@ -68,55 +68,55 @@
 #X msg 753 94 5 7;
 #X obj 422 338 f;
 #X obj 422 420 outlet;
-#X obj 651 317 cnv 10 109 55 empty empty empty 20 12 0 14 -228856 -66577
+#X obj 652 328 cnv 15 186 90 empty empty empty 20 12 0 14 -228856 -66577
 0;
-#X obj 652 318 cnv 10 10 40 empty \$0-keyon0 empty 20 12 0 14 -262144
+#X obj 657 331 cnv 15 20 82 empty \$0-keyon0 empty 20 12 0 14 -262144
 -66577 0;
-#X obj 668 318 cnv 10 10 40 empty \$0-keyon2 empty 20 12 0 14 -262144
+#X obj 683 331 cnv 15 20 82 empty \$0-keyon2 empty 20 12 0 14 -262144
 -66577 0;
-#X obj 684 318 cnv 10 10 40 empty \$0-keyon4 empty 20 12 0 14 -262144
+#X obj 709 331 cnv 15 20 82 empty \$0-keyon4 empty 20 12 0 14 -262144
 -66577 0;
-#X obj 700 318 cnv 10 10 40 empty \$0-keyon5 empty 20 12 0 14 -262144
+#X obj 735 331 cnv 15 20 82 empty \$0-keyon5 empty 20 12 0 14 -262144
 -66577 0;
-#X obj 716 318 cnv 10 10 40 empty \$0-keyon7 empty 20 12 0 14 -128992
+#X obj 761 331 cnv 15 20 82 empty \$0-keyon7 empty 20 12 0 14 -262144
 -66577 0;
-#X obj 732 318 cnv 10 10 40 empty \$0-keyon9 empty 20 12 0 14 -262144
+#X obj 787 331 cnv 15 20 82 empty \$0-keyon9 empty 20 12 0 14 -262144
 -66577 0;
-#X obj 748 318 cnv 10 10 40 empty \$0-keyon11 empty 20 12 0 14 -262144
+#X obj 813 331 cnv 15 20 82 empty \$0-keyon11 empty 20 12 0 14 -262144
 -66577 0;
-#X obj 660 318 cnv 10 10 30 empty \$0-keyon1 empty 20 12 0 14 -66577
+#X obj 671 330 cnv 15 15 50 empty \$0-keyon1 empty 20 12 0 14 -66577
 -66577 0;
-#X obj 676 318 cnv 10 10 30 empty \$0-keyon3 empty 20 12 0 14 -66577
+#X obj 698 330 cnv 15 15 50 empty \$0-keyon3 empty 20 12 0 14 -66577
 -66577 0;
-#X obj 708 318 cnv 10 10 30 empty \$0-keyon6 empty 20 12 0 14 -66577
+#X obj 747 330 cnv 15 15 50 empty \$0-keyon6 empty 20 12 0 14 -66577
 -66577 0;
-#X obj 724 318 cnv 10 10 30 empty \$0-keyon8 empty 20 12 0 14 -66577
+#X obj 777 330 cnv 15 15 50 empty \$0-keyon8 empty 20 12 0 14 -66577
 -66577 0;
-#X obj 740 318 cnv 10 10 30 empty \$0-keyon10 empty 20 12 0 14 -66577
+#X obj 802 330 cnv 15 15 50 empty \$0-keyon10 empty 20 12 0 14 -66577
 -66577 0;
-#X obj 652 359 cnv 10 10 10 empty \$0-key0 empty 20 12 0 14 -258699
+#X obj 660 392 cnv 15 15 15 empty \$0-key0 empty 20 12 0 14 -262144
 -66577 0;
-#X obj 668 359 cnv 10 10 10 empty \$0-key2 empty 20 12 0 14 -258699
+#X obj 686 392 cnv 15 15 15 empty \$0-key2 empty 20 12 0 14 -262144
 -66577 0;
-#X obj 684 359 cnv 10 10 10 empty \$0-key4 empty 20 12 0 14 -262144
+#X obj 712 392 cnv 15 15 15 empty \$0-key4 empty 20 12 0 14 -262144
 -66577 0;
-#X obj 700 359 cnv 10 10 10 empty \$0-key5 empty 20 12 0 14 -258699
+#X obj 738 392 cnv 15 15 15 empty \$0-key5 empty 20 12 0 14 -262144
 -66577 0;
-#X obj 716 359 cnv 10 10 10 empty \$0-key7 empty 20 12 0 14 -258699
+#X obj 764 392 cnv 15 15 15 empty \$0-key7 empty 20 12 0 14 -262144
 -66577 0;
-#X obj 732 359 cnv 10 10 10 empty \$0-key9 empty 20 12 0 14 -262144
+#X obj 790 392 cnv 15 15 15 empty \$0-key9 empty 20 12 0 14 -262144
 -66577 0;
-#X obj 748 359 cnv 10 10 10 empty \$0-key11 empty 20 12 0 14 -262144
+#X obj 816 392 cnv 15 15 15 empty \$0-key11 empty 20 12 0 14 -262144
 -66577 0;
-#X obj 740 338 cnv 10 10 10 empty \$0-key10 empty 20 12 0 14 -258699
+#X obj 802 361 cnv 15 15 15 empty \$0-key10 empty 20 12 0 14 -66577
 -66577 0;
-#X obj 724 338 cnv 10 10 10 empty \$0-key8 empty 20 12 0 14 -258699
+#X obj 777 361 cnv 15 15 15 empty \$0-key8 empty 20 12 0 14 -66577
 -66577 0;
-#X obj 708 338 cnv 10 10 10 empty \$0-key6 empty 20 12 0 14 -66577
+#X obj 747 361 cnv 15 15 15 empty \$0-key6 empty 20 12 0 14 -66577
 -66577 0;
-#X obj 676 338 cnv 10 10 10 empty \$0-key3 empty 20 12 0 14 -258699
+#X obj 698 361 cnv 15 15 15 empty \$0-key3 empty 20 12 0 14 -66577
 -66577 0;
-#X obj 660 338 cnv 10 10 10 empty \$0-key1 empty 20 12 0 14 -66577
+#X obj 671 361 cnv 15 15 15 empty \$0-key1 empty 20 12 0 14 -66577
 -66577 0;
 #N canvas 287 275 1224 388 handle_keyboard 0;
 #X floatatom 133 100 5 0 0 0 - - -;
@@ -256,4 +256,4 @@
 #X connect 28 0 21 0;
 #X connect 56 0 65 0;
 #X connect 62 0 64 0;
-#X coords 0 -1 1 1 110 74 1 650 300;
+#X coords 0 -1 1 1 190 120 1 650 300;
