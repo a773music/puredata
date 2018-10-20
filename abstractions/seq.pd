@@ -1,42 +1,42 @@
-#N canvas 432 56 1248 845 10;
+#N canvas 105 17 1248 845 10;
 #X obj 104 254 bng 15 50 10 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
 #X obj 47 362 nbx 4 14 -1e+37 1e+37 0 0 \$0-step0 \$0-step0 0 -10 7
-0 10 -166441 -1 -1 0 256;
+0 10 -262144 -1 -1 0 256;
 #X obj 47 376 nbx 4 14 -1e+37 1e+37 0 0 \$0-step1 \$0-step1 1 -10 7
-0 10 -262144 -1 -1 0 256;
+0 10 -262144 -1 -1 1 256;
 #X obj 47 390 nbx 4 14 -1e+37 1e+37 0 0 \$0-step2 \$0-step2 2 -10 7
-0 10 -262144 -1 -1 0 256;
+0 10 -166441 -1 -1 2 256;
 #X obj 47 404 nbx 4 14 -1e+37 1e+37 0 0 \$0-step3 \$0-step3 3 -10 7
-0 10 -262144 -1 -1 0 256;
+0 10 -262144 -1 -1 1 256;
 #X obj 47 418 nbx 4 14 -1e+37 1e+37 0 0 \$0-step4 \$0-step4 4 -10 7
-0 10 -262144 -1 -1 0 256;
+0 10 -262144 -1 -1 4 256;
 #X obj 47 432 nbx 4 14 -1e+37 1e+37 0 0 \$0-step5 \$0-step5 5 -10 7
-0 10 -262144 -1 -1 0 256;
+0 10 -262144 -1 -1 5 256;
 #X obj 47 446 nbx 4 14 -1e+37 1e+37 0 0 \$0-step6 \$0-step6 6 -10 7
-0 10 -262144 -1 -1 0 256;
+0 10 -262144 -1 -1 6 256;
 #X obj 47 460 nbx 4 14 -1e+37 1e+37 0 0 \$0-step7 \$0-step7 7 -10 7
-0 10 -262144 -1 -1 0 256;
+0 10 -262144 -1 -1 7 256;
 #X obj 47 474 nbx 4 14 -1e+37 1e+37 0 0 \$0-step8 \$0-step8 8 -10 7
-0 10 -262144 -1 -1 0 256;
+0 10 -262144 -1 -1 8 256;
 #X obj 47 488 nbx 4 14 -1e+37 1e+37 0 0 \$0-step9 \$0-step9 9 -10 7
-0 10 -262144 -1 -1 0 256;
+0 10 -262144 -1 -1 9 256;
 #X obj 47 502 nbx 4 14 -1e+37 1e+37 0 0 \$0-step10 \$0-step10 10 -15
-7 0 10 -262144 -1 -1 0 256;
+7 0 10 -262144 -1 -1 10 256;
 #X obj 47 516 nbx 4 14 -1e+37 1e+37 0 0 \$0-step11 \$0-step11 11 -15
-7 0 10 -262144 -1 -1 0 256;
+7 0 10 -262144 -1 -1 11 256;
 #X obj 47 530 nbx 4 14 -1e+37 1e+37 0 0 \$0-step12 \$0-step12 12 -15
-7 0 10 -262144 -1 -1 0 256;
+7 0 10 -262144 -1 -1 12 256;
 #X obj 47 544 nbx 4 14 -1e+37 1e+37 0 0 \$0-step13 \$0-step13 13 -15
-7 0 10 -262144 -1 -1 0 256;
+7 0 10 -262144 -1 -1 13 256;
 #X obj 47 558 nbx 4 14 -1e+37 1e+37 0 0 \$0-step14 \$0-step14 14 -15
-7 0 10 -262144 -1 -1 0 256;
+7 0 10 -262144 -1 -1 14 256;
 #X obj 47 572 nbx 4 14 -1e+37 1e+37 0 0 \$0-step15 \$0-step15 15 -15
-7 0 10 -262144 -1 -1 0 256;
+7 0 10 -262144 -1 -1 15 256;
 #X obj 30 283 nbx 2 14 0 15 0 0 \$0-first \$0-first empty -35 7 0 10
 -262144 -1 -1 0 256;
 #X obj 74 283 nbx 2 14 0 15 0 0 \$0-last \$0-last -> -15 7 0 10 -262144
--1 -1 15 256;
+-1 -1 7 256;
 #X obj 41 705 r \$0-stepValue;
 #X obj 41 746 outlet;
 #X obj 113 54 inlet;
@@ -411,7 +411,7 @@ f f f f f f f f f f f;
 #X obj 110 410 vradio 10 1 0 8 empty part empty 0 -8 0 10 -262144 -1
 -1 0;
 #X obj 106 372 tgl 14 0 \$0-reset_on_part \$0-reset_on_part rst -5
--8 0 10 -262144 -1 -1 0 1;
+-8 0 10 -262144 -1 -1 1 1;
 #X obj 156 705 sel 1;
 #X obj 466 695 sel 1;
 #X obj 352 252 beat 1;
@@ -425,20 +425,20 @@ f f f f f f f f f f f;
 #X obj 412 291 spigot;
 #X obj 511 464 +;
 #X obj 572 403 r \$0-direction;
-#X obj 880 94 r \$0-last;
-#X obj 790 94 r \$0-first;
-#X obj 840 139 bondo;
-#X obj 790 114 pipe 0.001;
-#X obj 880 114 pipe 0.001;
+#X obj 900 134 r \$0-last;
+#X obj 810 134 r \$0-first;
+#X obj 860 179 bondo;
+#X obj 810 154 pipe 0.001;
+#X obj 900 154 pipe 0.001;
 #X floatatom 511 485 5 0 0 0 - - -;
 #X obj 511 505 mod;
-#X obj 731 176 expr if($f1 < $f2 \, $f2 - $f1 + 1 \, $f1 - $f2 + 1)
+#X obj 751 216 expr if($f1 < $f2 \, $f2 - $f1 + 1 \, $f1 - $f2 + 1)
 \; if($f1 > $f2 \, -1 \, 1) \; if($f1 <= $f2 \, $f1 \, $f2);
 #X obj 511 526 +;
 #X floatatom 511 547 5 0 0 0 - - -;
-#X obj 864 220 s \$0-direction;
-#X obj 731 219 s \$0-mod;
-#X obj 1015 225 s \$0-offset;
+#X obj 884 260 s \$0-direction;
+#X obj 751 259 s \$0-mod;
+#X obj 1035 265 s \$0-offset;
 #X obj 554 504 r \$0-offset;
 #X obj 554 484 r \$0-mod;
 #X floatatom 41 726 5 0 0 0 - - -;
@@ -539,21 +539,21 @@ f f f f f f f f f f f;
 #X connect 12 9 11 9;
 #X restore 41 161 pd handle_part_on;
 #X obj 463 302 r \$0-in_bang;
-#X obj 836 287 r \$0-reset_on_part;
-#X obj 790 287 r part;
-#X msg 790 308 bang;
-#X obj 790 329 spigot;
-#X obj 790 350 s \$0-reset;
+#X obj 846 377 r \$0-reset_on_part;
+#X obj 800 377 r part;
+#X msg 800 398 bang;
+#X obj 800 419 spigot;
+#X obj 800 440 s \$0-reset;
 #X obj 542 208 s \$0-step;
 #X obj 542 188 t f b;
-#X obj 895 353 r \$0-div;
-#X obj 895 373 pipe 0.0001;
-#X obj 1003 371 pipe 0.0001;
-#X obj 957 413 bondo 2;
-#X obj 1003 351 r \$0-mult;
-#X obj 901 449 expr if($f2 \, $f1 / $f2 \, $f1);
-#X obj 901 470 s \$0-complex_div;
-#X obj 66 269 nbx 3 14 0 100 0 0 \$0-mult \$0-mult mult 0 -8 0 10 -262144
+#X obj 905 443 r \$0-div;
+#X obj 905 463 pipe 0.0001;
+#X obj 1013 461 pipe 0.0001;
+#X obj 967 503 bondo 2;
+#X obj 1013 441 r \$0-mult;
+#X obj 911 539 expr if($f2 \, $f1 / $f2 \, $f1);
+#X obj 911 560 s \$0-complex_div;
+#X obj 66 269 nbx 3 14 1 100 0 0 \$0-mult \$0-mult mult 0 -8 0 10 -262144
 -1 -1 1 256;
 #X obj 422 212 r \$0-complex_div;
 #X obj 209 653 ii 0.123457;
@@ -578,7 +578,7 @@ f f f f f f f f f f f;
 #X obj 643 54 inlet;
 #X obj 563 74 s \$0-jitter;
 #X obj 643 74 s \$0-step_jitter;
-#X obj 720 298 r reset;
+#X obj 730 388 r reset;
 #N canvas 699 414 367 403 color_steps 0;
 #X obj 123 273 pack 0 0 \$0;
 #X obj 171 216 count;
@@ -616,6 +616,13 @@ f f f f f f f f f f f;
 #X obj 542 159 r \$0-step_out;
 #X msg 618 561 set \$1;
 #X obj 618 582 s \$0-step_in;
+#X obj 106 299 bng 14 250 50 0 \$0-resync empty empty -10 -8 0 10 -262144
+-1 -1;
+#X obj 747 53 inlet;
+#X obj 747 94 s \$0-resync;
+#X msg 747 74 bang;
+#X msg 596 366 1;
+#X obj 596 344 r \$0-resync;
 #X connect 0 0 56 0;
 #X connect 19 0 94 0;
 #X connect 21 0 127 0;
@@ -719,4 +726,9 @@ f f f f f f f f f f f;
 #X connect 144 15 16 0;
 #X connect 145 0 110 0;
 #X connect 146 0 147 0;
+#X connect 149 0 151 0;
+#X connect 151 0 150 0;
+#X connect 151 0 148 0;
+#X connect 152 0 123 1;
+#X connect 153 0 152 0;
 #X coords 0 -1 1 1 90 348 1 30 240;
