@@ -40,6 +40,7 @@ bangs.pd
 branch.pd  
 burst.pd  
 clkdiv.pd  
+count.pd  
 count2.pd  
 counter.pd  
 debug.pd  
@@ -47,10 +48,12 @@ diff.pd
 distribution_exp.pd  
 ii.pd  
 init.pd  
+math.pd  
 pi.pd  
 prob.pd  
 randf.pd  
 randline.pd  
+randlist.pd  
 rand.pd  
 relay.pd  
 round.pd  
@@ -79,6 +82,7 @@ beat.pd
 bpm2ms.pd  
 note.pd  
 part_gate.pd  
+part_router.pd  
 parts.pd  
 quantize_gui.pd  
 quantize.pd  
@@ -88,6 +92,7 @@ router8out.pd
 seq_array.pd  
 seq.pd  
 seq_phrase.pd  
+seq_rest.pd  
 seq_trigger.pd  
 ticker.pd  
 trig.pd  
@@ -110,4 +115,5 @@ rot_speaker~.pd
 
 ## Misc
 p.pd  
+
 
