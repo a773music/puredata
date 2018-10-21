@@ -4,7 +4,7 @@
 #X obj 101 148 outlet~;
 #X obj 29 128 *~;
 #X obj 101 128 *~;
-#X text 212 32 adopted from martin brinkmann;
+#X text 212 32 adopted from peter brinkmann;
 #X text 23 19 audio in;
 #X text 102 19 pan -1 to 1;
 #X text 31 165 out L;

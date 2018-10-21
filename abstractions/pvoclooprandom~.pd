@@ -700,7 +700,7 @@ by "location".;
 #X obj 678 127 inlet;
 #X text 733 129 tp (semitones);
 #X text 345 268 phasevocoder from the pd doc \, removed some stuff
-\, wireless connections etc \, added some mess... 2009 martin brinkmann
+\, wireless connections etc \, added some mess... 2009 peter brinkmann
 ;
 #N canvas 0 0 450 300 (subpatch) 0;
 #X array \$0-sample 88200 float 0;

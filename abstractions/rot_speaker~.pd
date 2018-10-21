@@ -109,7 +109,7 @@
 #X floatatom 133 83 5 0 0 0 - - -;
 #X obj 133 41 wrap;
 #X text 178 23 <- pos in;
-#X text 479 35 addapted from martin brinkmann;
+#X text 479 35 addapted from peter brinkmann;
 #X obj 10 92 *~ 2;
 #X connect 0 0 67 0;
 #X connect 2 0 3 0;
