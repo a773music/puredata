@@ -1,8 +1,9 @@
-#N canvas 923 586 450 300 10;
+#N canvas 883 593 450 300 10;
 #X obj 122 93 count;
 #X msg 104 41 2;
 #X msg 143 41 5;
 #X obj 122 144 print;
 #X connect 0 0 3 0;
+#X connect 0 1 3 0;
 #X connect 1 0 0 0;
 #X connect 2 0 0 0;
