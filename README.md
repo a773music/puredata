@@ -14,8 +14,6 @@ meterbridge.pd
 mixer.pd  
 out2~.pd  
 out~.pd  
-pan1~.pd  
-pan2~.pd  
 pan~.pd  
 
 ## Synth-ish
@@ -103,7 +101,6 @@ clocked_delay~.pd
 dirty_limiter.pd  
 freeverb1~.pd  
 freeverb2~.pd  
-pvoclooprandom~.pd  
 resample~.pd  
 reverb_allpass~.pd  
 reverb_dattorro~.pd  
@@ -111,9 +108,9 @@ reverb_gsp~.pd
 reverb_moorer~.pd  
 reverb_schroeder~.pd  
 reverb_spacestation~.pd  
-rot_speaker~.pd  
 
 ## Misc
 p.pd  
+
 
 
