@@ -13,17 +13,17 @@
 #X msg 151 264 1 \, 0 \$1;
 #X obj 261 42 inlet;
 #X obj 261 63 s \$0-decay;
-#X obj 4 28 nbx 5 14 -1e+37 1e+37 0 0 \$0-decay \$0-decay decay 0 -8
+#X obj 0 28 nbx 5 14 -1e+37 1e+37 0 0 \$0-decay \$0-decay decay 0 -8
 0 10 -262144 -1 -1 200 256;
-#X obj 4 58 nbx 5 14 0 1 0 0 \$0-click \$0-click click 0 -8 0 10 -262144
+#X obj 0 58 nbx 5 14 0 1 0 0 \$0-click \$0-click click 0 -8 0 10 -262144
 -1 -1 0.14 256;
-#X obj 64 58 nbx 5 14 -1e+37 1e+37 0 0 \$0-pow \$0-pow pow 0 -8 0 10
+#X obj 54 58 nbx 5 14 -1e+37 1e+37 0 0 \$0-pow \$0-pow pow 0 -8 0 10
 -262144 -1 -1 5 256;
 #X obj 151 184 t b b;
 #X floatatom 211 303 5 0 0 0 - - -;
 #X obj 196 327 f;
 #X obj 211 241 r \$0-click;
-#X obj 64 28 nbx 5 14 -1e+37 1e+37 0 0 \$0-freq \$0-freq freq 0 -8
+#X obj 54 28 nbx 5 14 -1e+37 1e+37 0 0 \$0-freq \$0-freq freq 0 -8
 0 10 -262144 -1 -1 200 256;
 #X obj 294 231 r \$0-freq;
 #X obj 294 210 r \$0-pow;
@@ -129,4 +129,4 @@
 #X connect 61 0 60 0;
 #X connect 62 0 59 0;
 #X connect 63 0 58 0;
-#X coords 0 -1 1 1 121 75 1 0 0;
+#X coords 0 -1 1 1 108 74 1 0 0;

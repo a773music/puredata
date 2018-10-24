@@ -1,0 +1,14 @@
+#N canvas 563 240 338 284 10;
+#X obj 24 215 dac~;
+#X obj 34 25 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1 1
+;
+#X obj 34 45 metro 500;
+#X obj 34 65 bng 15 50 10 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 34 110 bd1;
+#A saved 300 100 25 300;
+#X connect 1 0 2 0;
+#X connect 2 0 3 0;
+#X connect 3 0 4 0;
+#X connect 4 0 0 0;
+#X connect 4 0 0 1;
