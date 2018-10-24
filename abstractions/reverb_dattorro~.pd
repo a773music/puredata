@@ -368,13 +368,13 @@
 #X obj 174 178 r \$0-bandwidth;
 #X obj 278 178 r \$0-damping;
 #X obj 373 178 r \$0-gain;
-#X obj 705 333 nbx 5 14 0 200 0 0 \$0-predelay \$0-predelay predelay
+#X obj 700 325 nbx 5 14 0 200 0 0 \$0-predelay \$0-predelay predelay
 0 -8 0 10 -262144 -1 -1 180.8 256;
-#X obj 705 363 nbx 5 14 0 1 0 0 \$0-bandwidth \$0-bandwidth bandwidth
+#X obj 700 355 nbx 5 14 0 1 0 0 \$0-bandwidth \$0-bandwidth band-wth
 0 -8 0 10 -262144 -1 -1 1 256;
-#X obj 775 333 nbx 5 14 0 1 0 0 \$0-damping \$0-damping damping 0 -8
+#X obj 754 325 nbx 5 14 0 1 0 0 \$0-damping \$0-damping damping 0 -8
 0 10 -262144 -1 -1 0.54 256;
-#X obj 775 363 nbx 5 14 0 1 0 0 \$0-gain \$0-gain gain 0 -8 0 10 -262144
+#X obj 754 355 nbx 5 14 0 1 0 0 \$0-gain \$0-gain gain 0 -8 0 10 -262144
 -1 -1 0.96 256;
 #X obj 94 599 delread~ \$0-dela 8.9;
 #X obj 109 620 delread~ \$0-dela 99.8;
@@ -422,6 +422,15 @@
 #X text 788 61 presets;
 #X obj 292 791 ii 0.2;
 #X text 290 774 out gain;
+#X obj 943 293 spigot 1;
+#X msg 1018 238 0;
+#X obj 1042 293 spigot 1;
+#X obj 943 343 spigot 1;
+#X obj 1042 343 spigot 1;
+#X obj 943 272 ii 180;
+#X obj 943 321 ii 1;
+#X obj 1042 272 ii 0.55;
+#X obj 1042 322 ii 0.96;
 #X connect 0 0 84 0;
 #X connect 1 0 87 0;
 #X connect 2 0 117 0;
@@ -552,6 +561,7 @@
 #X connect 120 1 119 0;
 #X connect 121 0 120 0;
 #X connect 122 0 123 0;
+#X connect 122 0 144 0;
 #X connect 122 1 124 0;
 #X connect 122 2 125 0;
 #X connect 122 3 126 0;
@@ -568,4 +578,16 @@
 #X connect 139 0 138 0;
 #X connect 141 0 83 1;
 #X connect 141 0 82 1;
-#X coords 0 -1 1 1 176 80 1 700 300;
+#X connect 143 0 123 0;
+#X connect 144 0 143 1;
+#X connect 144 0 145 1;
+#X connect 144 0 146 1;
+#X connect 144 0 147 1;
+#X connect 145 0 125 0;
+#X connect 146 0 124 0;
+#X connect 147 0 126 0;
+#X connect 148 0 143 0;
+#X connect 149 0 146 0;
+#X connect 150 0 145 0;
+#X connect 151 0 147 0;
+#X coords 0 -1 1 1 108 71 1 700 300;

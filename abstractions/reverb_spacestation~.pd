@@ -175,30 +175,30 @@
 #X obj 233 146 r \$0-fblp;
 #X obj 303 146 r \$0-fbhp;
 #X obj 373 146 r \$0-fbgain;
-#X obj 553 326 nbx 5 14 0 20000 0 0 \$0-inlp \$0-inlp inlp 0 -8 0 10
+#X obj 550 326 nbx 5 14 0 20000 0 0 \$0-inlp \$0-inlp inlp 0 -8 0 10
 -262144 -1 -1 20000 256;
-#X obj 553 356 nbx 5 14 0 20000 0 0 \$0-inhp \$0-inhp inhp 0 -8 0 10
+#X obj 550 356 nbx 5 14 0 20000 0 0 \$0-inhp \$0-inhp inhp 0 -8 0 10
 -262144 -1 -1 5 256;
-#X obj 613 326 nbx 5 14 0 20000 0 0 \$0-fblp \$0-fblp fblp 0 -8 0 10
+#X obj 604 326 nbx 5 14 0 20000 0 0 \$0-fblp \$0-fblp fblp 0 -8 0 10
 -262144 -1 -1 20000 256;
-#X obj 613 356 nbx 5 14 0 20000 0 0 \$0-fbhp \$0-fbhp fbhp 0 -8 0 10
+#X obj 604 356 nbx 5 14 0 20000 0 0 \$0-fbhp \$0-fbhp fbhp 0 -8 0 10
 -262144 -1 -1 6 256;
-#X obj 673 326 nbx 5 14 0 1 0 0 \$0-fbgain \$0-fbgain fbgain 0 -8 0
+#X obj 658 326 nbx 5 14 0 1 0 0 \$0-fbgain \$0-fbgain fbgain 0 -8 0
 10 -262144 -1 -1 0.97 256;
-#X obj 910 126 f;
-#X obj 859 101 savestate;
-#X obj 859 215 s \$0-inlp;
-#X obj 929 215 s \$0-inhp;
-#X obj 999 215 s \$0-fblp;
-#X obj 1069 215 s \$0-fbhp;
-#X obj 1139 215 s \$0-fbgain;
-#X obj 859 174 unpack f f f f f;
-#X obj 925 101 r \$0-inlp;
-#X obj 995 101 r \$0-inhp;
-#X obj 1065 101 r \$0-fblp;
-#X obj 1135 101 r \$0-fbhp;
-#X obj 1205 101 r \$0-fbgain;
-#X obj 910 149 pack f f f f f;
+#X obj 850 733 f;
+#X obj 799 708 savestate;
+#X obj 799 822 s \$0-inlp;
+#X obj 869 822 s \$0-inhp;
+#X obj 939 822 s \$0-fblp;
+#X obj 1009 822 s \$0-fbhp;
+#X obj 1079 822 s \$0-fbgain;
+#X obj 799 781 unpack f f f f f;
+#X obj 865 708 r \$0-inlp;
+#X obj 935 708 r \$0-inhp;
+#X obj 1005 708 r \$0-fblp;
+#X obj 1075 708 r \$0-fbhp;
+#X obj 1145 708 r \$0-fbgain;
+#X obj 850 756 pack f f f f f;
 #X obj 374 166 clip 0 1;
 #X obj 374 186 * 2.7;
 #X obj 858 289 route inlp inhp fblp fbhp fbgain;
@@ -215,6 +215,17 @@
 #X msg 520 128 inlp 2000 \, inhp 400 \, fblp 1800 \, fbhp 6 \, fbgain
 0.9;
 #X obj 654 599 ii 0.15;
+#X obj 1073 516 spigot 1;
+#X msg 1148 461 0;
+#X obj 1152 516 spigot 1;
+#X obj 1073 566 spigot 1;
+#X obj 1152 566 spigot 1;
+#X obj 1217 516 spigot 1;
+#X obj 1073 495 ii 20000;
+#X obj 1152 495 ii 20000;
+#X obj 1217 494 ii 0.97;
+#X obj 1073 544 ii 5;
+#X obj 1152 545 ii 6;
 #X connect 1 0 156 0;
 #X connect 2 0 160 0;
 #X connect 3 0 156 1;
@@ -371,6 +382,7 @@
 #X connect 182 0 188 0;
 #X connect 182 1 181 0;
 #X connect 188 0 183 0;
+#X connect 188 0 210 0;
 #X connect 188 1 184 0;
 #X connect 188 2 185 0;
 #X connect 188 3 186 0;
@@ -393,4 +405,19 @@
 #X connect 207 0 203 0;
 #X connect 208 0 159 1;
 #X connect 208 0 163 1;
-#X coords 0 -1 1 1 180 72 1 550 300;
+#X connect 209 0 183 0;
+#X connect 210 0 209 1;
+#X connect 210 0 211 1;
+#X connect 210 0 212 1;
+#X connect 210 0 213 1;
+#X connect 210 0 214 1;
+#X connect 211 0 185 0;
+#X connect 212 0 184 0;
+#X connect 213 0 186 0;
+#X connect 214 0 187 0;
+#X connect 215 0 209 0;
+#X connect 216 0 211 0;
+#X connect 217 0 214 0;
+#X connect 218 0 212 0;
+#X connect 219 0 213 0;
+#X coords 0 -1 1 1 162 72 1 550 300;
