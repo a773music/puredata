@@ -46,7 +46,8 @@ diff.pd
 distribution_exp.pd  
 ii.pd  
 init.pd  
-math.pd  
+math.pd
+pack_array.pd  
 pi.pd  
 prob.pd  
 randf.pd  
@@ -57,10 +58,12 @@ relay.pd
 round.pd  
 scale.pd  
 seed.pd  
+seq_guts.pd  
+unpack_array.pd  
 
 ## Instruments
-bd01.pd  
-bd02.pd  
+bd1.pd  
+bd2.pd  
 beatcut2.pd  
 beatcut.pd  
 fmdrum1.pd  
@@ -83,6 +86,7 @@ part_gate.pd
 part_router.pd  
 parts.pd  
 quantize_gui.pd  
+quantize_gui_large.pd  
 quantize.pd  
 quantize_time.pd  
 router8out~.pd  
@@ -102,12 +106,6 @@ dirty_limiter.pd
 freeverb1~.pd  
 freeverb2~.pd  
 resample~.pd  
-reverb_allpass~.pd  
-reverb_dattorro~.pd  
-reverb_gsp~.pd  
-reverb_moorer~.pd  
-reverb_schroeder~.pd  
-reverb_spacestation~.pd  
 
 ## Misc
 p.pd  
