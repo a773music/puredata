@@ -54,18 +54,18 @@
 #X obj 262 37 inlet;
 #X obj 262 78 s \$0-swing;
 #X obj 262 58 clip 0.5 0.75;
-#X obj 145 462 mod 2;
-#X obj 307 448 bpm2ms;
-#X obj 343 472 r \$0-div;
-#X obj 322 525 bondo 3;
+#X obj 432 528 mod 2;
+#X obj 594 514 bpm2ms;
+#X obj 630 538 r \$0-div;
+#X obj 609 591 bondo 3;
 #X obj 422 487 r \$0-swing;
-#X obj 86 517 pipe;
-#X obj 145 483 sel 0 1;
-#X msg 147 504 0;
-#X obj 107 432 t f f;
-#X obj 209 509 f;
-#X obj 307 583 expr $f1 * $f2 * ($f3- 0.5) * 2;
-#X obj 348 496 pipe 0.001;
+#X obj 354 592 pipe;
+#X obj 432 549 sel 0 1;
+#X msg 434 570 0;
+#X obj 375 507 t f f;
+#X obj 496 575 f;
+#X obj 594 649 expr $f1 * $f2 * ($f3- 0.5) * 2;
+#X obj 635 562 pipe 0.001;
 #X obj 232 114 tgl 14 0 \$0-reset_on_part \$0-reset_on_part reset -30
 6 0 10 -262144 -1 -1 0 1;
 #X obj 650 317 r \$0-reset_on_part;
@@ -84,7 +84,7 @@
 #X obj 202 580 r \$0-bang;
 #X obj 74 544 t b f;
 #X obj 743 119 r reset;
-#X connect 0 0 61 0;
+#X connect 0 0 79 0;
 #X connect 1 0 0 0;
 #X connect 2 0 6 0;
 #X connect 2 1 5 0;
@@ -140,7 +140,6 @@
 #X connect 56 1 63 1;
 #X connect 56 2 63 2;
 #X connect 57 0 56 2;
-#X connect 58 0 79 0;
 #X connect 59 0 60 0;
 #X connect 59 1 62 0;
 #X connect 60 0 58 1;
