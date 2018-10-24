@@ -1,4 +1,4 @@
-#N canvas 672 499 450 300 10;
+#N canvas 794 619 450 300 10;
 #X obj 88 112 r bpm;
 #X obj 88 188 outlet;
 #X obj 225 56 list \$1;

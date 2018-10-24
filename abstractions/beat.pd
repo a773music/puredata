@@ -43,7 +43,7 @@
 #X obj 949 348 + 1;
 #X msg 919 306 bang;
 #X obj 974 314 r \$0-reset;
-#X obj 227 116 nbx 4 14 0.5 0.75 0 0 \$0-swing \$0-swing swng -26 7
+#X obj 941 58 nbx 4 14 0.5 0.75 0 0 \$0-swing \$0-swing swng -26 7
 0 10 -262144 -1 -1 0.5 256;
 #X obj 615 329 f;
 #X obj 615 354 pack;
@@ -66,8 +66,8 @@
 #X obj 209 509 f;
 #X obj 307 583 expr $f1 * $f2 * ($f3- 0.5) * 2;
 #X obj 348 496 pipe 0.001;
-#X obj 272 116 tgl 14 0 \$0-reset_on_part \$0-reset_on_part empty -20
-5 0 10 -262144 -1 -1 0 1;
+#X obj 232 114 tgl 14 0 \$0-reset_on_part \$0-reset_on_part reset -30
+6 0 10 -262144 -1 -1 0 1;
 #X obj 650 317 r \$0-reset_on_part;
 #X obj 658 441 s \$0-reset_on_part;
 #X obj 685 86 r part;
@@ -76,7 +76,7 @@
 #X obj 685 128 spigot;
 #X obj 685 149 s \$0-reset;
 #X obj 141 580 s \$0-bang;
-#X obj 286 116 bng 14 150 50 0 \$0-bang \$0-bang empty 17 7 0 10 -262144
+#X obj 246 114 bng 14 150 50 0 \$0-bang \$0-bang empty 17 7 0 10 -262144
 -1 -1;
 #X obj 1007 270 spigot 1;
 #X msg 1052 248 0;
@@ -163,4 +163,4 @@
 #X connect 79 0 73 0;
 #X connect 79 1 7 0;
 #X connect 80 0 72 0;
-#X coords 0 -1 1 1 100 30 1 200 100;
+#X coords 0 -1 1 1 60 30 1 200 100;
