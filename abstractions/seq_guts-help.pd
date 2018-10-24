@@ -1,6 +1,6 @@
 #N canvas 487 159 722 525 10;
 #X obj 142 263 seq_guts;
-#X obj 84 64 ticker;
+#X obj 82 59 ticker;
 #A saved 60 1;
 #X obj 281 81 beat;
 #A saved 0 0;
@@ -21,9 +21,9 @@
 #X obj 280 182 r part;
 #X msg 280 203 bang;
 #X floatatom 60 182 5 0 0 0 - - -;
-#X obj 100 39 pipe 2000;
-#X msg 61 148 bang;
-#X text 62 130 manual step;
+#X obj 82 39 pipe 2000;
+#X msg 60 148 bang;
+#X text 61 130 manual step;
 #X obj 130 317 print step;
 #X obj 229 305 print done;
 #X obj 412 336 seq_guts;
@@ -61,6 +61,7 @@
 #X connect 21 1 22 0;
 #X connect 22 0 26 0;
 #X connect 22 1 28 0;
+#X connect 22 1 21 0;
 #X connect 23 0 21 4;
 #X connect 24 0 22 4;
 #X connect 29 0 0 0;
