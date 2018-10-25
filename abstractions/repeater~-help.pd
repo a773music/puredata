@@ -1,0 +1,33 @@
+#N canvas 982 123 516 457 10;
+#X obj 138 307 repeater~;
+#X obj 129 36 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 129 177 ad~;
+#A saved 1 59;
+#X obj 48 194 osc~ 440;
+#X obj 113 257 *~;
+#X obj 125 370 dac~;
+#X obj 249 184 branch;
+#X msg 294 243 0;
+#X msg 249 205 bang;
+#X floatatom 267 275 5 0 0 0 - - -;
+#X obj 129 56 metro 500;
+#X obj 249 244 nbx 3 14 -1e+37 1e+37 0 1 empty empty repeat_in_ms -74
+8 0 10 -262144 -1 -1 59 256;
+#X obj 249 158 nbx 4 14 0 1 0 1 empty empty repeat_prob 50 7 0 10 -262144
+-1 -1 0.2 256;
+#X connect 0 0 5 1;
+#X connect 0 0 5 0;
+#X connect 1 0 10 0;
+#X connect 2 0 4 1;
+#X connect 3 0 4 0;
+#X connect 4 0 0 0;
+#X connect 6 0 8 0;
+#X connect 6 1 7 0;
+#X connect 7 0 9 0;
+#X connect 8 0 11 0;
+#X connect 9 0 0 1;
+#X connect 10 0 2 0;
+#X connect 10 0 12 0;
+#X connect 11 0 9 0;
+#X connect 12 0 6 0;
