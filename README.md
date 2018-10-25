@@ -106,7 +106,7 @@ clocked_delay~.pd
 dirty_limiter.pd  
 freeverb1~.pd  
 freeverb2~.pd  
-repeater~.pd
+repeater~.pd  
 resample~.pd  
 
 ## Misc
