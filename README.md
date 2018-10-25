@@ -80,7 +80,7 @@ karplus_strong_2.pd
 sample_player2.pd  
 sample_player.pd  
 saw_synth.pd  
-sd01.pd  
+sd1.pd  
 
 ## Sequencing
 beat.pd  
