@@ -1,5 +1,4 @@
 #N canvas 690 214 642 344 10;
-#X obj 115 229 pack_array;
 #N canvas 0 50 450 250 (subpatch) 0;
 #X array \$0-array 10 float 3;
 #A 0 0.0714286 0.314286 0.457143 -0.4 -0.128571 -0.171429 -0.428571
@@ -12,9 +11,10 @@
 #X obj 115 250 print;
 #X obj 176 76 f \$0;
 #X msg 176 96 set \$1-array;
-#X connect 0 0 5 0;
-#X connect 2 0 6 0;
-#X connect 3 0 0 0;
-#X connect 4 0 0 0;
+#X obj 115 229 array_pack;
+#X connect 1 0 5 0;
+#X connect 2 0 7 0;
+#X connect 3 0 7 0;
+#X connect 5 0 6 0;
 #X connect 6 0 7 0;
-#X connect 7 0 0 0;
+#X connect 7 0 4 0;

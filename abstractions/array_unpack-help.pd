@@ -1,8 +1,7 @@
 #N canvas 626 641 557 247 10;
-#X obj 173 175 unpack_array;
 #N canvas 0 50 450 250 (subpatch) 0;
 #X array \$0-array 10 float 3;
-#A 0 0 0.3 -0.2 0 0 0 -0.428571 0.114286 0.3 0.471428;
+#A 0 0 0 0 0 0 0 -0.428571 0.114286 0.3 0.471428;
 #X coords 0 1 10 -1 200 140 1 0 0;
 #X restore 287 29 graph;
 #X msg 126 43 bang;
@@ -10,8 +9,9 @@
 #X msg 126 83 set \$1-array;
 #X msg 31 43 0 0.3 -0.2;
 #X msg 31 63 0 0 0 0 0 0;
+#X obj 173 175 array_unpack;
+#X connect 1 0 2 0;
 #X connect 2 0 3 0;
-#X connect 3 0 4 0;
-#X connect 4 0 0 0;
-#X connect 5 0 0 0;
-#X connect 6 0 0 0;
+#X connect 3 0 6 0;
+#X connect 4 0 6 0;
+#X connect 5 0 6 0;
