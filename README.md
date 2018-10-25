@@ -1,5 +1,8 @@
 # Pure Data Abstractions
 
+## Video
+https://www.instagram.com/p/BpKd-WNg2Ca/?hl=da
+
 ## Mixing
 ch_bridge.pd  
 ch_fader.pd  
