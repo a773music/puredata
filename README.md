@@ -10,6 +10,7 @@ boostlo~.pd
 gain~.pd  
 gate~.pd  
 gate.pd  
+gate4.pd  
 meterbridge.pd  
 mixer.pd  
 out2~.pd  
@@ -33,6 +34,8 @@ supersaw~.pd
 tri~.pd  
 
 ## Glue/utility
+array_pack.pd  
+array_unpack.pd  
 bangeater.pd  
 bangs.pd  
 branch.pd  
@@ -46,8 +49,7 @@ diff.pd
 distribution_exp.pd  
 ii.pd  
 init.pd  
-math.pd
-pack_array.pd  
+math.pd  
 pi.pd  
 prob.pd  
 randf.pd  
@@ -59,7 +61,6 @@ round.pd
 scale.pd  
 seed.pd  
 seq_guts.pd  
-unpack_array.pd  
 
 ## Instruments
 bd1.pd  
@@ -105,10 +106,9 @@ clocked_delay~.pd
 dirty_limiter.pd  
 freeverb1~.pd  
 freeverb2~.pd  
+repeater~.pd
 resample~.pd  
 
 ## Misc
 p.pd  
-
-
 
