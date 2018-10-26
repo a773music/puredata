@@ -36,7 +36,11 @@
 #X obj 149 81 expr $f1 + $f2*12;
 #X obj 231 26 r \$0-octave;
 #X obj 231 47 pipe 0.0001;
+#X obj 92 0 bng 15 50 10 0 \$0----------- \$0-in empty 17 7 0 10 -262144
+-1 -1;
+#X obj 169 57 s \$0-in;
 #X connect 1 0 32 0;
+#X connect 1 0 36 0;
 #X connect 3 0 4 0;
 #X connect 4 0 5 0;
 #X connect 5 0 6 0;
