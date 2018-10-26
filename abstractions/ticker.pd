@@ -38,7 +38,7 @@
 #X msg 172 332 0;
 #X msg 185 362 0;
 #X obj 328 100 nbx 3 14 1 999 0 0 bpm bpm empty 0 -8 0 10 -262144 -1
--1 60 256;
+-1 160 256;
 #X obj 761 438 f;
 #X obj 761 458 pack;
 #X obj 710 418 savestate;
@@ -57,7 +57,7 @@
 #X obj 170 458 mod 24;
 #X obj 170 479 sel 0;
 #X obj 300 100 tgl 14 0 \$0-run \$0-run empty 17 7 0 10 -262144 -1
--1 0 1;
+-1 1 1;
 #X obj 44 150 s \$0-run;
 #X obj 56 292 r \$0-run;
 #X obj 814 418 r \$0-run;
@@ -71,8 +71,8 @@
 #X obj 101 30 key;
 #X obj 101 70 sel 32;
 #X obj 144 227 s reset;
-#X obj 1 16 tgl 15 0 space_start_stop space_start_stop empty 17 7 0
-10 -262144 -1 -1 1 1;
+#X obj 1 17 tgl 14 0 space_start_stop space_start_stop empty 17 7 0
+10 -262144 -1 -1 0 1;
 #X obj 101 50 spigot;
 #X obj 134 30 r space_start_stop;
 #X obj 144 128 f;

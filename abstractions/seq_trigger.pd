@@ -1,6 +1,6 @@
 #N canvas 216 130 1375 676 10;
 #X obj 100 190 vsl 10 50 0 1 0 0 \$0-p0 \$0-p0 empty 0 -9 0 10 -262144
--1 -1 0 1;
+-1 -1 4900 1;
 #X obj 121 116 nbx 4 14 0 100 0 0 \$0-div \$0-div div -20 7 0 10 -262144
 -1 -1 1 256;
 #X obj 110 190 vsl 10 50 0 1 0 0 \$0-p1 \$0-p1 empty 0 -9 0 10 -262144
@@ -169,7 +169,7 @@ f f f f f;
 #X connect 68 0 63 0;
 #X restore 55 319 pd savestate;
 #X obj 216 158 tgl 10 0 \$0-part0 \$0-part0 empty 17 7 0 10 -262144
--1 -1 0 1;
+-1 -1 1 1;
 #X obj 120 130 nbx 3 14 -1 99 0 0 \$0-nb_repeats \$0-nb_repeats rep
 -20 7 0 10 -262144 -1 -1 -1 256;
 #X obj 216 168 tgl 10 0 \$0-part1 \$0-part1 empty 17 7 0 10 -262144
@@ -488,7 +488,7 @@ f f f f f;
 -1 -1;
 #X obj 971 251 s \$0-out_bang;
 #X obj 66 463 r \$0-out_bang;
-#X obj 201 238 bng 15 150 50 0 \$0-out_bang \$0-out_bang empty 17 7
+#X obj 201 238 bng 15 50 10 0 \$0-out_bang \$0-out_bang empty 17 7
 0 10 -262144 -1 -1;
 #X obj 744 567 spigot;
 #X obj 801 546 r \$0-open_end;
@@ -496,7 +496,7 @@ f f f f f;
 #X obj 364 325 delay 0.001;
 #X msg 464 176 1;
 #X obj 202 158 tgl 14 0 \$0-use_parts \$0-use_parts empty -20 7 0 10
--262144 -1 -1 0 1;
+-262144 -1 -1 1 1;
 #X obj 190 116 nbx 4 14 1 100 0 0 \$0-mult \$0-mult mlt -20 7 0 10
 -262144 -1 -1 1 256;
 #X obj 953 334 r \$0-div;
