@@ -35,13 +35,17 @@
 #X obj 146 160 beat 2 -1;
 #A saved 0 0;
 #X obj 94 59 ticker;
-#A saved 120 1;
+#A saved 120 0;
 #X msg 494 74 1;
 #X obj 108 304 beat;
 #A saved 0.5 0;
 #X obj 108 339 bng 15 50 10 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
 #X text 135 215 negative delay = early;
+#X obj 176 304 beat2;
+#A saved 0 0;
+#X obj 176 339 bng 15 50 10 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
 #X connect 0 0 22 0;
 #X connect 8 0 4 0;
 #X connect 8 0 6 0;
@@ -59,3 +63,4 @@
 #X connect 21 0 9 0;
 #X connect 23 0 18 0;
 #X connect 24 0 25 0;
+#X connect 27 0 28 0;
