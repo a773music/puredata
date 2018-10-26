@@ -1,0 +1,23 @@
+#N canvas 496 203 450 300 10;
+#X obj 109 44 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 131 95 f;
+#X obj 161 95 + 1;
+#X obj 109 216 bng 15 50 10 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X floatatom 131 116 5 0 0 0 - - -;
+#X msg 187 66 0;
+#X obj 109 64 metro 1000;
+#X floatatom 154 216 5 0 0 0 - - -;
+#X obj 109 162 clkdiv 3;
+#X text 218 66 <- reset;
+#X connect 0 0 6 0;
+#X connect 1 0 2 0;
+#X connect 1 0 4 0;
+#X connect 2 0 1 1;
+#X connect 4 0 8 1;
+#X connect 5 0 1 1;
+#X connect 6 0 1 0;
+#X connect 6 0 8 0;
+#X connect 8 0 3 0;
+#X connect 8 1 7 0;
