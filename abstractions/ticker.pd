@@ -1,4 +1,4 @@
-#N canvas 759 119 921 771 10;
+#N canvas 104 16 1495 990 10;
 #X obj 114 36 loadbang;
 #X obj 93 322 metro;
 #X obj 55 46 inlet;
@@ -59,7 +59,7 @@
 #X obj 300 100 tgl 14 0 \$0-run \$0-run empty 17 7 0 10 -262144 -1
 -1 1 1;
 #X obj 44 150 s \$0-run;
-#X obj 56 292 r \$0-run;
+#X obj 984 320 r \$0-run;
 #X obj 814 418 r \$0-run;
 #X obj 780 541 s \$0-run;
 #X obj 77 547 outlet;
@@ -114,6 +114,14 @@
 #X connect 7 0 4 0;
 #X coords 0 -1 1 1 100 15 1 0 0;
 #X restore 577 69 pd resend_bpm;
+#X obj 1035 503 midiout;
+#X text 986 295 1:start \, 0:stop;
+#X obj 986 351 t f f;
+#X msg 986 409 250;
+#X msg 1021 410 252;
+#X msg 1058 410 248;
+#X obj 1032 448 f;
+#X obj 986 380 sel 1;
 #X connect 0 0 34 0;
 #X connect 1 0 17 0;
 #X connect 2 0 49 0;
@@ -121,6 +129,7 @@
 #X connect 5 0 6 0;
 #X connect 5 0 7 0;
 #X connect 5 0 53 0;
+#X connect 5 0 72 0;
 #X connect 6 0 5 1;
 #X connect 9 0 38 0;
 #X connect 10 0 32 0;
@@ -173,9 +182,17 @@
 #X connect 53 0 54 0;
 #X connect 54 0 52 0;
 #X connect 54 0 60 0;
-#X connect 57 0 1 0;
+#X connect 57 0 69 0;
 #X connect 58 0 40 1;
 #X connect 61 0 64 0;
 #X connect 62 0 61 1;
 #X connect 63 0 61 0;
+#X connect 69 0 1 0;
+#X connect 69 1 74 0;
+#X connect 70 0 73 0;
+#X connect 71 0 73 0;
+#X connect 72 0 73 0;
+#X connect 73 0 67 0;
+#X connect 74 0 70 0;
+#X connect 74 1 71 0;
 #X coords 0 -1 1 1 64 14 2 300 100;
