@@ -218,6 +218,7 @@
 #X obj 154 209 timer;
 #X obj 136 174 t b b b;
 #X obj 116 239 delay;
+#X obj 339 48 loadbang;
 #X connect 0 0 104 0;
 #X connect 18 0 105 0;
 #X connect 19 0 36 1;
@@ -327,4 +328,5 @@
 #X connect 107 1 106 0;
 #X connect 107 2 106 1;
 #X connect 108 0 99 0;
+#X connect 109 0 99 0;
 #X coords 0 -1 1 1 85 37 1 0 0;

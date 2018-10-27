@@ -2,7 +2,7 @@
 #X obj 198 33 inlet;
 #X text 196 14 step;
 #X obj 0 15 tgl 10 0 \$0-step0 \$0-step0 empty 17 7 0 10 -262144 -1
--1 1 1;
+-1 0 1;
 #X obj 10 15 tgl 10 0 \$0-step1 \$0-step1 empty 17 7 0 10 -262144 -1
 -1 0 1;
 #X obj 20 15 tgl 10 0 \$0-step2 \$0-step2 empty 17 7 0 10 -262144 -1
@@ -18,7 +18,7 @@
 #X obj 75 15 tgl 10 0 \$0-step7 \$0-step7 empty 17 7 0 10 -262144 -1
 -1 0 1;
 #X obj 90 15 tgl 10 0 \$0-step8 \$0-step8 empty 17 7 0 10 -262144 -1
--1 1 1;
+-1 0 1;
 #X obj 100 15 tgl 10 0 \$0-step9 \$0-step9 empty 17 7 0 10 -262144
 -1 -1 0 1;
 #X obj 110 15 tgl 10 0 \$0-step10 \$0-step10 empty 17 7 0 10 -262144
@@ -196,9 +196,9 @@ f f f f f f f f f;
 #X obj 370 658 s \$0-color;
 #X obj 375 599 pack;
 #X obj 374 527 t f f;
-#X obj 1 16 cnv 8 8 8 empty \$0-col0 empty 20 12 0 14 -33289 -66577
+#X obj 1 16 cnv 8 8 8 empty \$0-col0 empty 20 12 0 14 -262144 -66577
 0;
-#X obj 11 16 cnv 8 8 8 empty \$0-col1 empty 20 12 0 14 -262144 -66577
+#X obj 11 16 cnv 8 8 8 empty \$0-col1 empty 20 12 0 14 -128992 -66577
 0;
 #X obj 21 16 cnv 8 8 8 empty \$0-col2 empty 20 12 0 14 -262144 -66577
 0;
@@ -212,7 +212,7 @@ f f f f f f f f f;
 0;
 #X obj 76 16 cnv 8 8 8 empty \$0-col7 empty 20 12 0 14 -262144 -66577
 0;
-#X obj 91 16 cnv 8 8 8 empty \$0-col8 empty 20 12 0 14 -33289 -66577
+#X obj 91 16 cnv 8 8 8 empty \$0-col8 empty 20 12 0 14 -262144 -66577
 0;
 #X obj 101 16 cnv 8 8 8 empty \$0-col9 empty 20 12 0 14 -262144 -66577
 0;
@@ -309,7 +309,7 @@ f f f f f f f f f;
 #X obj 1111 529 r \$0-step30;
 #X obj 1111 545 r \$0-step31;
 #X obj 0 25 tgl 10 0 \$0-step16 \$0-step16 empty 17 7 0 10 -262144
--1 -1 1 1;
+-1 -1 0 1;
 #X obj 10 25 tgl 10 0 \$0-step17 \$0-step17 empty 17 7 0 10 -262144
 -1 -1 0 1;
 #X obj 20 25 tgl 10 0 \$0-step18 \$0-step18 empty 17 7 0 10 -262144
@@ -325,7 +325,7 @@ f f f f f f f f f;
 #X obj 75 25 tgl 10 0 \$0-step23 \$0-step23 empty 17 7 0 10 -262144
 -1 -1 0 1;
 #X obj 90 25 tgl 10 0 \$0-step24 \$0-step24 empty 17 7 0 10 -262144
--1 -1 1 1;
+-1 -1 0 1;
 #X obj 100 25 tgl 10 0 \$0-step25 \$0-step25 empty 17 7 0 10 -262144
 -1 -1 0 1;
 #X obj 110 25 tgl 10 0 \$0-step26 \$0-step26 empty 17 7 0 10 -262144
@@ -340,7 +340,7 @@ f f f f f f f f f;
 -1 -1 0 1;
 #X obj 165 25 tgl 10 0 \$0-step31 \$0-step31 empty 17 7 0 10 -262144
 -1 -1 0 1;
-#X obj 1 26 cnv 8 8 8 empty \$0-col16 empty 20 12 0 14 -33289 -66577
+#X obj 1 26 cnv 8 8 8 empty \$0-col16 empty 20 12 0 14 -262144 -66577
 0;
 #X obj 11 26 cnv 8 8 8 empty \$0-col17 empty 20 12 0 14 -262144 -66577
 0;
@@ -356,13 +356,13 @@ f f f f f f f f f;
 0;
 #X obj 76 26 cnv 8 8 8 empty \$0-col23 empty 20 12 0 14 -262144 -66577
 0;
-#X obj 91 26 cnv 8 8 8 empty \$0-col24 empty 20 12 0 14 -33289 -66577
+#X obj 91 26 cnv 8 8 8 empty \$0-col24 empty 20 12 0 14 -262144 -66577
 0;
 #X obj 101 26 cnv 8 8 8 empty \$0-col25 empty 20 12 0 14 -262144 -66577
 0;
 #X obj 111 26 cnv 8 8 8 empty \$0-col26 empty 20 12 0 14 -262144 -66577
 0;
-#X obj 121 26 cnv 8 8 8 empty \$0-col27 empty 20 12 0 14 -128992 -66577
+#X obj 121 26 cnv 8 8 8 empty \$0-col27 empty 20 12 0 14 -262144 -66577
 0;
 #X obj 136 26 cnv 8 8 8 empty \$0-col28 empty 20 12 0 14 -33289 -66577
 0;
@@ -399,6 +399,7 @@ f f f f f f f f f;
 | ($f1==23&$f25==1) | ($f1==24&$f26==1) | ($f1==25&$f27==1) | ($f1==26&$f28==1)
 | ($f1==27&$f29==1) | ($f1==28&$f30==1) | ($f1==29&$f31==1) | ($f1==30&$f32==1)
 | ($f1==31&$f33==1) \, 1 \, 0);
+#X obj 427 58 loadbang;
 #X connect 0 0 99 0;
 #X connect 18 0 187 1;
 #X connect 19 0 187 2;
@@ -572,4 +573,5 @@ f f f f f f f f f;
 #X connect 185 0 187 31;
 #X connect 186 0 187 32;
 #X connect 187 0 35 0;
+#X connect 188 0 169 0;
 #X coords 0 -1 1 1 175 37 1 0 0;
