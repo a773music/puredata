@@ -1,29 +1,29 @@
-#N canvas 794 232 652 393 10;
-#X obj 36 240 seq_beat16;
-#A saved 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1;
-#X obj 36 32 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1 1
+#N canvas 794 232 363 378 10;
+#X obj 36 32 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0 1
 ;
 #X floatatom 36 94 5 0 0 0 - - -;
 #X obj 35 74 f;
 #X obj 65 74 + 1;
-#X msg 137 29 0;
+#X msg 100 52 0;
 #X obj 36 282 bng 15 50 10 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
 #X obj 36 52 metro 200;
-#X obj 150 240 seq_beat16;
-#A saved 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1;
 #X obj 150 282 bng 15 50 10 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
 #X obj 150 181 jitter;
 #A saved 0.1 5;
+#X obj 36 240 seq16;
+#A saved 1 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0;
+#X obj 150 240 seq16;
+#A saved 1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0;
 #X connect 0 0 6 0;
-#X connect 1 0 7 0;
-#X connect 2 0 0 0;
-#X connect 2 0 10 0;
-#X connect 3 0 4 0;
-#X connect 3 0 2 0;
-#X connect 4 0 3 1;
-#X connect 5 0 3 1;
-#X connect 7 0 3 0;
-#X connect 8 0 9 0;
-#X connect 10 0 8 0;
+#X connect 1 0 8 0;
+#X connect 1 0 9 0;
+#X connect 2 0 3 0;
+#X connect 2 0 1 0;
+#X connect 3 0 2 1;
+#X connect 4 0 2 1;
+#X connect 6 0 2 0;
+#X connect 8 0 10 0;
+#X connect 9 0 5 0;
+#X connect 10 0 7 0;
