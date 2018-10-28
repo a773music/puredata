@@ -6,7 +6,11 @@
 #X obj 18 182 r part;
 #X obj 18 204 print part;
 #X obj 18 86 parts 1 2 4 8;
-#A saved -1 0;
+#A saved 0 0;
+#X floatatom 224 191 5 0 0 0 - - -;
+#X obj 224 170 beat 4;
+#A saved 0 1;
 #X connect 1 0 0 0;
 #X connect 2 0 5 0;
 #X connect 3 0 4 0;
+#X connect 7 0 6 0;
