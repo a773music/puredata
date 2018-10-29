@@ -1,9 +1,9 @@
-#N canvas 129 91 1085 658 10;
+#N canvas 487 392 1085 658 10;
 #X obj 1 16 nbx 2 14 -1 7 0 0 \$0-first_part \$0-first_part empty 0
 -8 0 10 -262144 -1 -1 0 256;
 #X obj 147 15 inlet;
 #X obj 147 36 clip 0 7;
-#X obj 1 46 cnv 14 14 14 empty \$0-status0 empty 20 12 0 14 -262144
+#X obj 1 46 cnv 14 14 14 empty \$0-status0 empty 20 12 0 14 -33289
 -66577 0;
 #X obj 16 46 cnv 14 14 14 empty \$0-status1 empty 20 12 0 14 -262144
 -66577 0;
@@ -137,35 +137,35 @@
 #X obj 154 111 r \$0-part_sched;
 #X obj 121 195 spigot;
 #X obj 40 147 beat -1 -1;
-#A saved 0 0;
+#A saved 0 1;
 #X obj 374 111 r \$0-part_sched;
 #X obj 341 195 spigot;
 #X obj 260 147 beat -1 -1;
-#A saved 0 0;
+#A saved 0 1;
 #X obj 594 111 r \$0-part_sched;
 #X obj 561 195 spigot;
 #X obj 480 147 beat -1 -1;
-#A saved 0 0;
+#A saved 0 1;
 #X obj 814 111 r \$0-part_sched;
 #X obj 781 195 spigot;
 #X obj 700 147 beat -1 -1;
-#A saved 0 0;
+#A saved 0 1;
 #X obj 154 281 r \$0-part_sched;
 #X obj 121 365 spigot;
 #X obj 40 317 beat -1 -1;
-#A saved 0 0;
+#A saved 0 1;
 #X obj 374 281 r \$0-part_sched;
 #X obj 341 365 spigot;
 #X obj 260 317 beat -1 -1;
-#A saved 0 0;
+#A saved 0 1;
 #X obj 594 281 r \$0-part_sched;
 #X obj 561 365 spigot;
 #X obj 480 317 beat -1 -1;
-#A saved 0 0;
+#A saved 0 1;
 #X obj 814 281 r \$0-part_sched;
 #X obj 781 365 spigot;
 #X obj 700 317 beat -1 -1;
-#A saved 0 0;
+#A saved 0 1;
 #X obj 121 237 s \$0-part;
 #X obj 341 237 s \$0-part;
 #X obj 561 237 s \$0-part;
@@ -428,7 +428,7 @@
 #X obj 113 20 r \$0-div;
 #X obj 31 156 mod;
 #X obj 110 108 beat 0.125;
-#A saved 0 0;
+#A saved 0 1;
 #X obj 83 82 * 8;
 #X obj 31 176 /;
 #X obj 113 41 t f b;
@@ -444,18 +444,17 @@
 #X connect 4 0 9 0;
 #X connect 5 0 3 0;
 #X connect 5 1 6 0;
-#X connect 6 0 2 2;
 #X connect 8 0 7 0;
 #X connect 9 0 8 0;
 #X restore 22 216 pd handle_progress_bar;
 #X obj 3 61 hsl 116 10 0 1 0 0 \$0-junk \$0-progress empty -2 -8 0
-10 -262144 -1 -1 0 1;
+10 -262144 -1 -1 6828 1;
 #X obj 231 165 outlet;
 #X obj 231 145 r \$0-progress;
 #X obj 211 185 s part_progress;
-#X obj 531 171 spigot 1;
+#X obj 600 165 spigot 1;
 #X msg 598 115 0;
-#X obj 531 150 ii 0;
+#X obj 600 144 ii 0;
 #X obj 509 36 r reset;
 #X obj 509 57 s \$0-reset;
 #X connect 1 0 2 0;
