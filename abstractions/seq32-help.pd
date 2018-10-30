@@ -1,28 +1,52 @@
-#N canvas 794 232 682 520 10;
-#X obj 36 32 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0 1
-;
-#X floatatom 36 94 5 0 0 0 - - -;
-#X obj 35 74 f;
-#X obj 65 74 + 1;
-#X msg 97 52 0;
-#X obj 33 228 bng 15 50 10 0 empty empty empty 17 7 0 10 -262144 -1
--1;
-#X obj 55 160 seq32;
-#A saved 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 1
+#N canvas 658 43 977 549 10;
+#X obj 134 137 seq32p;
+#A saved 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 0 1 1 0 0 1 1
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1
+0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 1 1 0 0
+0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 0 0 0 0
+0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 0 0 0 0 0 0
+0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 8;
+#X obj 417 58 hradio 15 1 0 8 part part part 0 -8 0 10 -262144 -1 -1
+0;
+#X obj 163 436 seq32;
+#A saved 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 0 0 0;
-#X obj 36 52 metro 125;
-#X obj 36 114 seqs 32 2;
-#X obj 55 180 seq32;
-#A saved 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 1 0 0 1 0 1 0 0 1 0
-0 1 0;
-#X connect 0 0 7 0;
-#X connect 1 0 8 0;
-#X connect 2 0 3 0;
-#X connect 2 0 1 0;
-#X connect 3 0 2 1;
-#X connect 4 0 2 1;
-#X connect 6 0 5 0;
-#X connect 7 0 2 0;
-#X connect 8 0 6 0;
-#X connect 8 1 9 0;
-#X connect 9 0 5 0;
+#X obj 153 55 beat 0.25;
+#A saved 0 1;
+#X obj 603 58 ticker;
+#A saved 120 1;
+#X obj 134 162 bng 15 50 10 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 410 152 seq16;
+#A saved 1 1 0 1 0 0 0 0 0 0 0 1 0 0 0 0;
+#X obj 410 177 bng 15 50 10 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 159 201 seq16p;
+#A saved 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0
+0 1 1 1 0 0 0 0 0 1 0 0 0 0 0 0 0 1 1 1 0 0 0 0 0 1 0 0 0 0 0 0 0 1
+1 1 0 0 0 0 0 1 0 0 0 0 0 0 0 1 1 1 0 0 0 0 0 1 0 0 0 0 0 0 0 0 8;
+#X obj 159 226 bng 15 50 10 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 411 222 seq8;
+#A saved 1 1 0 0 0 0 0 0;
+#X obj 411 237 bng 15 50 10 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 159 283 seq8p;
+#A saved 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 0 0 0 1 0 0 0 1 0 1 0 1
+0 1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 0 0 1 1 0 0 1 1 0 0 1 1 0
+0 0 8;
+#X obj 159 308 bng 15 50 10 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X connect 0 0 5 0;
+#X connect 3 0 0 0;
+#X connect 3 0 6 0;
+#X connect 3 0 8 0;
+#X connect 3 0 10 0;
+#X connect 3 0 12 0;
+#X connect 6 0 7 0;
+#X connect 8 0 9 0;
+#X connect 10 0 11 0;
+#X connect 12 0 13 0;
