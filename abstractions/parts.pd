@@ -1,11 +1,11 @@
-#N canvas 487 392 1085 658 10;
+#N canvas 487 392 1039 310 10;
 #X obj 1 16 nbx 2 14 -1 7 0 0 \$0-first_part \$0-first_part empty 0
 -8 0 10 -262144 -1 -1 0 256;
 #X obj 147 15 inlet;
 #X obj 147 36 clip 0 7;
-#X obj 1 46 cnv 14 14 14 empty \$0-status0 empty 20 12 0 14 -33289
+#X obj 1 46 cnv 14 14 14 empty \$0-status0 empty 20 12 0 14 -262144
 -66577 0;
-#X obj 16 46 cnv 14 14 14 empty \$0-status1 empty 20 12 0 14 -262144
+#X obj 16 46 cnv 14 14 14 empty \$0-status1 empty 20 12 0 14 -33289
 -66577 0;
 #X obj 31 46 cnv 14 14 14 empty \$0-status2 empty 20 12 0 14 -262144
 -66577 0;
@@ -72,19 +72,19 @@
 #X connect 15 0 16 0;
 #X restore 22 117 pd handle_butttons;
 #X obj 147 56 + 1;
-#X obj 694 63 f;
-#X obj 694 84 pack;
-#X obj 643 43 savestate;
-#X obj 643 84 unpack;
-#X obj 643 104 s \$0-first_part;
-#X obj 709 43 r \$0-first_part;
+#X obj 843 56 f;
+#X obj 843 77 pack;
+#X obj 792 36 savestate;
+#X obj 792 77 unpack;
+#X obj 792 97 s \$0-first_part;
+#X obj 858 36 r \$0-first_part;
 #X obj 286 35 r \$0-first_part;
 #X obj 286 76 + 1;
 #X obj 286 97 s \$0-first;
 #X obj 286 55 pipe 0.0001;
 #X obj 404 35 r \$0-part;
-#X obj 404 76 - 1;
-#X obj 404 97 s part;
+#X obj 404 146 - 1;
+#X obj 404 167 s part;
 #N canvas 0 50 518 452 handle_first 0;
 #X obj 101 135 expr if(($f1 == 1 & $f2 != 0) | ($f1 == 2 & $f3 != 0)
 | ($f1 == 3 & $f4 != 0) | ($f1 == 4 & $f5 != 0) | ($f1 == 5 & $f6 !=
@@ -351,10 +351,10 @@
 #X connect 16 0 15 0;
 #X connect 16 1 13 0;
 #X restore 22 177 pd handle_sched_try;
-#X obj 404 55 diff;
-#X msg 456 76 0;
-#X obj 456 97 s \$0-reset;
-#N canvas 257 202 908 484 handle_colors 0;
+#X obj 404 125 diff;
+#X msg 456 146 0;
+#X obj 456 167 s \$0-reset;
+#N canvas 257 202 908 484 handle_colors 1;
 #X obj 72 39 r \$0-part_sched;
 #X obj 580 209 pack f f \$0;
 #X msg 580 229 \; \$3-status\$2 color \$1;
@@ -390,6 +390,7 @@
 #X msg 118 391 \; \$3-status\$2 color \$1;
 #X obj 149 331 - 1;
 #X obj 387 199 moses 0;
+#X obj 626 133 r \$0-part;
 #X connect 0 0 26 0;
 #X connect 1 0 2 0;
 #X connect 4 0 1 0;
@@ -423,6 +424,7 @@
 #X connect 30 0 31 0;
 #X connect 32 0 30 1;
 #X connect 33 1 15 0;
+#X connect 34 0 25 0;
 #X restore 22 196 pd handle_colors;
 #N canvas 657 480 529 397 handle_progress_bar 0;
 #X obj 113 20 r \$0-div;
@@ -448,15 +450,19 @@
 #X connect 9 0 8 0;
 #X restore 22 216 pd handle_progress_bar;
 #X obj 3 61 hsl 116 10 0 1 0 0 \$0-junk \$0-progress empty -2 -8 0
-10 -262144 -1 -1 6828 1;
+10 -262144 -1 -1 1150 1;
 #X obj 231 165 outlet;
 #X obj 231 145 r \$0-progress;
 #X obj 211 185 s part_progress;
-#X obj 600 165 spigot 1;
-#X msg 598 115 0;
-#X obj 600 144 ii 0;
-#X obj 509 36 r reset;
-#X obj 509 57 s \$0-reset;
+#X obj 749 158 spigot 1;
+#X msg 747 108 0;
+#X obj 749 137 ii 0;
+#X obj 609 36 r reset;
+#X obj 609 57 s \$0-reset;
+#X obj 471 35 loadbang;
+#X obj 404 104 spigot 0;
+#X obj 471 56 delay 0.001;
+#X msg 471 77 1;
 #X connect 1 0 2 0;
 #X connect 2 0 21 0;
 #X connect 21 0 11 0;
@@ -470,7 +476,7 @@
 #X connect 28 0 31 0;
 #X connect 29 0 30 0;
 #X connect 31 0 29 0;
-#X connect 32 0 38 0;
+#X connect 32 0 53 0;
 #X connect 33 0 34 0;
 #X connect 38 0 33 0;
 #X connect 38 0 39 0;
@@ -481,4 +487,8 @@
 #X connect 48 0 47 1;
 #X connect 49 0 47 0;
 #X connect 50 0 51 0;
+#X connect 52 0 54 0;
+#X connect 53 0 38 0;
+#X connect 54 0 55 0;
+#X connect 55 0 53 1;
 #X coords 0 -1 1 1 121 71 1 0 0;
