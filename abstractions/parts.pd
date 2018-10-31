@@ -1,6 +1,6 @@
 #N canvas 487 392 1039 310 10;
 #X obj 1 16 nbx 2 14 -1 7 0 0 \$0-first_part \$0-first_part empty 0
--8 0 10 -262144 -1 -1 0 256;
+-8 0 10 -262144 -1 -1 1 256;
 #X obj 147 15 inlet;
 #X obj 147 36 clip 0 7;
 #X obj 1 46 cnv 14 14 14 empty \$0-status0 empty 20 12 0 14 -262144
@@ -354,7 +354,7 @@
 #X obj 404 125 diff;
 #X msg 456 146 0;
 #X obj 456 167 s \$0-reset;
-#N canvas 257 202 908 484 handle_colors 1;
+#N canvas 257 202 908 484 handle_colors 0;
 #X obj 72 39 r \$0-part_sched;
 #X obj 580 209 pack f f \$0;
 #X msg 580 229 \; \$3-status\$2 color \$1;
@@ -450,7 +450,7 @@
 #X connect 9 0 8 0;
 #X restore 22 216 pd handle_progress_bar;
 #X obj 3 61 hsl 116 10 0 1 0 0 \$0-junk \$0-progress empty -2 -8 0
-10 -262144 -1 -1 1150 1;
+10 -262144 -1 -1 287 1;
 #X obj 231 165 outlet;
 #X obj 231 145 r \$0-progress;
 #X obj 211 185 s part_progress;
@@ -463,6 +463,8 @@
 #X obj 404 104 spigot 0;
 #X obj 471 56 delay 0.001;
 #X msg 471 77 1;
+#X obj 404 56 t f f;
+#X obj 431 76 != 1;
 #X connect 1 0 2 0;
 #X connect 2 0 21 0;
 #X connect 21 0 11 0;
@@ -476,7 +478,7 @@
 #X connect 28 0 31 0;
 #X connect 29 0 30 0;
 #X connect 31 0 29 0;
-#X connect 32 0 53 0;
+#X connect 32 0 56 0;
 #X connect 33 0 34 0;
 #X connect 38 0 33 0;
 #X connect 38 0 39 0;
@@ -491,4 +493,7 @@
 #X connect 53 0 38 0;
 #X connect 54 0 55 0;
 #X connect 55 0 53 1;
+#X connect 56 0 53 0;
+#X connect 56 1 57 0;
+#X connect 57 0 53 1;
 #X coords 0 -1 1 1 121 71 1 0 0;

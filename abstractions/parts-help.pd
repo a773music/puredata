@@ -15,7 +15,7 @@
 #X obj 324 170 beat 1 0 -1;
 #A saved 0 0;
 #X obj 18 86 parts 1 2 4 8;
-#A saved 0 0;
+#A saved 1 0;
 #X connect 1 0 0 0;
 #X connect 2 0 11 0;
 #X connect 3 0 4 0;
