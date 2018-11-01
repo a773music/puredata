@@ -1,4 +1,4 @@
-#N canvas 550 16 1111 608 10;
+#N canvas 550 29 1111 608 10;
 #X obj 114 155 count;
 #X obj 116 280 list store;
 #X obj 114 238 list store;
