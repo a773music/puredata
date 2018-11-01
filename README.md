@@ -66,6 +66,7 @@ seed.pd
 seq_guts.pd  
 
 ## Instruments
+bass_bob.pd  
 bd1.pd  
 bd2.pd  
 beatcut2.pd  
@@ -77,6 +78,7 @@ folder~.pd
 hh.pd  
 karplus_strong_1.pd  
 karplus_strong_2.pd  
+ping.pd  
 sample_player2.pd  
 sample_player.pd  
 saw_synth.pd  
@@ -84,9 +86,12 @@ sd1.pd
 
 ## Sequencing
 beat.pd  
+beat2.pd  
 bpm2ms.pd  
+jitter.pd  
 note.pd  
 part_gate.pd  
+part_gate2.pd  
 part_router.pd  
 parts.pd  
 quantize_gui.pd  
@@ -95,6 +100,11 @@ quantize.pd
 quantize_time.pd  
 router8out~.pd  
 router8out.pd  
+seq8.pd  
+seq16.pd  
+seq32.pd  
+seqs.pd  
+seqs8.pd  
 seq_array.pd  
 seq.pd  
 seq_phrase.pd  
@@ -110,8 +120,5 @@ dirty_limiter.pd
 freeverb1~.pd  
 freeverb2~.pd  
 repeater~.pd  
+repeater2~.pd  
 resample~.pd  
-
-## Misc
-p.pd  
-
