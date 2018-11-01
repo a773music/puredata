@@ -1,22 +1,20 @@
 #N canvas 584 332 554 372 10;
-#X obj 104 131 seq_trigger;
-#A saved 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 1 0 8 0 0 0.5 0 0 0 0 2
-;
 #X obj 27 28 ticker;
 #A saved 120 1;
 #X obj 104 318 bng 15 50 10 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
-#X obj 372 46 parts 4 4;
+#X obj 104 76 beat;
+#A saved 0 1;
+#X obj 104 97 mod 8;
+#X obj 190 318 bng 15 50 10 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 372 46 parts 8 8 8 8;
 #A saved 0 0;
-#X obj 280 131 seq_trigger;
-#A saved 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 1 0 8 0 0 0.5 0 0 0 0 2
-;
-#X obj 104 63 bng 15 250 50 0 empty empty start 17 7 0 10 -262144 -1
--1;
-#X obj 280 318 bng 15 50 10 0 empty empty empty 17 7 0 10 -262144 -1
--1;
-#X connect 0 0 2 0;
-#X connect 0 1 4 0;
-#X connect 4 0 6 0;
-#X connect 4 1 0 0;
-#X connect 5 0 0 0;
+#X obj 104 131 seq_trigger;
+#A saved 1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 8 0 0 0 0 0 0 0 8 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
+#X connect 2 0 3 0;
+#X connect 3 0 6 0;
+#X connect 6 0 1 0;
+#X connect 6 1 4 0;
