@@ -2,7 +2,7 @@
 #X obj 343 358 noteout;
 #X obj 147 26 inlet;
 #X obj 28 14 nbx 2 14 0 7 0 0 \$0-midi_channel \$0-midi_channel chan
--26 7 0 10 -262144 -1 -1 0 256;
+-26 7 0 10 -262144 -1 -1 6 256;
 #X obj 612 82 f;
 #X obj 612 111 pack;
 #X obj 561 53 savestate;
@@ -39,6 +39,7 @@
 #X obj 92 0 bng 15 50 10 0 \$0----------- \$0-in empty 17 7 0 10 -262144
 -1 -1;
 #X obj 169 57 s \$0-in;
+#X obj 47 158 r all_notes_off;
 #X connect 1 0 32 0;
 #X connect 1 0 36 0;
 #X connect 3 0 4 0;
@@ -77,4 +78,5 @@
 #X connect 32 0 26 0;
 #X connect 33 0 34 0;
 #X connect 34 0 32 1;
+#X connect 37 0 17 0;
 #X coords 0 -1 1 1 107 28 1 0 0;

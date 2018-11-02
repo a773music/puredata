@@ -41,7 +41,7 @@
 -1 -1;
 #X obj 170 479 sel 0;
 #X obj 300 100 tgl 14 0 \$0-run \$0-run empty 17 7 0 10 -262144 -1
--1 1 1;
+-1 0 1;
 #X obj 44 150 s \$0-run;
 #X obj 523 494 r \$0-run;
 #X obj 1318 56 r \$0-run;
@@ -56,7 +56,7 @@
 #X obj 101 70 sel 32;
 #X obj 144 227 s reset;
 #X obj 1 17 tgl 14 0 perf_mode perf_mode empty 17 7 0 10 -262144 -1
--1 0 1;
+-1 1 1;
 #X obj 101 50 spigot;
 #X obj 144 128 f;
 #X obj 202 206 expr 1-$f1;
@@ -66,6 +66,8 @@
 #X obj 144 149 t f f;
 #X msg 144 207 0;
 #X obj 134 30 r perf_mode;
+#X obj 57 252 s all_notes_off;
+#X msg 57 232 bang;
 #X connect 0 0 4 0;
 #X connect 1 0 5 0;
 #X connect 4 0 1 0;
@@ -73,10 +75,12 @@
 #X connect 6 0 7 0;
 #X connect 8 0 5 1;
 #X connect 9 0 11 0;
+#X connect 9 0 14 0;
 #X connect 10 0 9 0;
 #X connect 10 1 6 0;
 #X connect 11 0 2 0;
 #X connect 12 0 4 1;
+#X connect 14 0 13 0;
 #X coords 0 -1 1 1 15 30 1 1 1;
 #X restore 889 16 pd handle_spacebar;
 #N canvas 0 29 450 300 resend_bpm 0;
