@@ -34,7 +34,7 @@
 #X obj 30 255 nbx 2 14 0 15 0 0 \$0-first \$0-firstin empty -35 7 0
 10 -262144 -1 -1 0 256;
 #X obj 64 255 nbx 2 14 0 15 0 0 \$0-last \$0-lastin > -5 7 0 10 -262144
--1 -1 0 256;
+-1 -1 14 256;
 #X obj 41 746 outlet;
 #X obj 113 54 inlet;
 #X obj 249 751 outlet;
@@ -261,7 +261,7 @@
 #X obj 1414 511 r part;
 #X obj 1300 561 r \$0-last;
 #X obj 1299 584 tabwrite \$0-lasts;
-#X obj 868 230 r part;
+#X obj 866 216 r part;
 #X obj 788 285 tabread \$0-firsts;
 #X obj 905 285 tabread \$0-lasts;
 #X obj 866 254 t f f;
@@ -269,6 +269,10 @@
 #X obj 632 366 pack f \$0;
 #X obj 632 440 pack f \$0;
 #X msg 633 464 \; \$2-lastin set \$1;
+#X obj 867 235 f;
+#X obj 642 275 r \$0-last;
+#X obj 552 275 r \$0-first;
+#X msg 580 322 bang;
 #X connect 19 0 93 0;
 #X connect 21 0 25 1;
 #X connect 21 1 25 0;
@@ -378,7 +382,7 @@
 #X connect 138 0 137 1;
 #X connect 138 0 140 1;
 #X connect 139 0 140 0;
-#X connect 141 0 144 0;
+#X connect 141 0 149 0;
 #X connect 142 0 32 0;
 #X connect 142 0 146 0;
 #X connect 143 0 32 1;
@@ -387,4 +391,8 @@
 #X connect 144 1 143 0;
 #X connect 146 0 145 0;
 #X connect 147 0 148 0;
+#X connect 149 0 144 0;
+#X connect 150 0 152 0;
+#X connect 151 0 152 0;
+#X connect 152 0 149 0;
 #X coords 0 -1 1 1 62 255 1 30 240;
