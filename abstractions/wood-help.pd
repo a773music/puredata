@@ -1,0 +1,28 @@
+#N canvas 449 248 440 484 10;
+#X obj 94 315 gain~;
+#A saved 1;
+#X obj 87 363 dac~;
+#X obj 134 69 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X msg 94 129 0 2 4 7 9;
+#X floatatom 193 151 5 0 0 0 - - -;
+#X obj 94 150 randlist;
+#X obj 94 171 expr $f1 + $f2*12;
+#X obj 193 130 rand 7 3;
+#X obj 94 236 wood;
+#A saved 0.575775 0;
+#X obj 251 131 randf;
+#X obj 134 89 metro 150;
+#X connect 0 0 1 0;
+#X connect 0 0 1 1;
+#X connect 2 0 10 0;
+#X connect 3 0 5 0;
+#X connect 4 0 6 1;
+#X connect 5 0 6 0;
+#X connect 6 0 8 0;
+#X connect 7 0 4 0;
+#X connect 8 0 0 0;
+#X connect 9 0 8 1;
+#X connect 10 0 3 0;
+#X connect 10 0 7 0;
+#X connect 10 0 9 0;
